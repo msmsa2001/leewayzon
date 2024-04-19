@@ -14,63 +14,83 @@
 </head>
 <body>
     <!-- navbar Start -->
-<div class="topnav" id="myTopnav">
-    <a href="#home">Home</a>
-     <div class="dropdown">
-      <button class="dropdownbtn">About Us 
-          <i class="fa-solid fa-chevron-down"></i>    
-      </button>
-      <div class="dropdown-content">
-        <a href="#">Who We Are</a>
-        <a href="#">Tech-Expert</a>
-        <a href="#">Search Methodology</a>
-        <a href="#">Strategy </a>
-      </div>
-    </div> 
-    <div class="dropdown">
-      <button class="dropdownbtn">Service 
-          <i class="fa-solid fa-chevron-down"></i>    
-      </button>
-      <div class="dropdown-content">
-        <a href="#">RPO</a>
-        <a href="#">PAY-ROLL SERVICE</a>
-        <a href="#">CONTRACT STAFFING</a>
-        <a href="#">HR OUTSOURCING</a>
-        <a href="#">DIRECT PLACEMENT</a>
-        <a href="#">Corporate training</a>
-  
-      </div>
-    </div> 
-    <div class="dropdown">
-      <button class="dropdownbtn">Training 
-          <i class="fa-solid fa-chevron-down"></i>    
-      </button>
-      <div class="dropdown-content">
-        <a href="#">Front-End Developer</a>
-        <a href="#">Back-End Developer</a>
-        <a href="#">Full Stack Developer</a>
-        <a href="#">UI/UX</a>
-        <a href="#">Artificial Intelligence</a>
-        <a href="#">Machine Learning</a>
-        <a href="#">Data Science</a>
-        <a href="#">Data Analysis</a>
-      </div>
-    </div> 
-    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-    <a href="#contact">Contact</a>
-  
-  </div>
-  
-  <script>
-      function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-          x.className += " responsive";
-        } else {
-          x.className = "topnav";
-        }
-      }
-      </script>
+    <nav>
+        <div class="wrapper">
+          <div class="logo"><a href="#"><img src="assests/Group 18767.svg" alt=""></a></div>
+          <input type="radio" name="slider" id="menu-btn">
+          <input type="radio" name="slider" id="close-btn">
+          <ul class="nav-links">
+            <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+            <li><a href="#">Home</a></li>
+            <li>
+              <a href="#" class="desktop-item">About <i class="fa-solid fa-chevron-down"></i></a>
+              <input type="checkbox" id="showDrop">
+              <label for="showDrop" class="mobile-item">About</label>
+              <ul class="drop-menu">
+                <li><a href="Who-we-are.html">Who we are</a></li>
+                <li><a href="people.html">Tech Expert</a></li>
+                <li><a href="searchMethodology.html">Search Methodology</a></li>
+                <li><a href="strategy.html">Strategy</a></li>
+              </ul>
+            </li>
+    
+            <li>
+              <a href="#" class="desktop-item">Services <i class="fa-solid fa-chevron-down"></i></a>
+              <input type="checkbox" id="showServicesDrop">
+              <label for="showServicesDrop" class="mobile-item">Services</label>
+              <ul class="drop-menu">
+                <li><a href="payroll.html">PRO</a></li>
+                <li><a href="payroll.html">Payroll Service</a></li>
+                <li><a href="staffing.html">Contract Staffing</a></li>
+                <li><a href="hr.html">HR Outsourcing</a></li>
+                <li><a href="placment.html">Direct Placement</a></li>
+                <li><a href="corporate.html">Corporate Training</a></li>
+              </ul>
+            </li>
+            
+            <li>
+              <a href="#" class="desktop-item">Training <i class="fa-solid fa-chevron-down"></i></a>
+              <input type="checkbox" id="showTrainingDrop">
+              <label for="showTrainingDrop" class="mobile-item">Training</label>
+              <ul class="drop-menu">
+                <li><a href="Frontend.html">Frontend</a></li>
+                <li><a href="backend.html">Backend</a></li>
+                <li><a href="fullstack.html">Full Stack</a></li>
+                <li><a href="ui-ux.html">UI/UX</a></li>
+                <li><a href="ai.html">Artificial Intelligence</a></li>
+                <li><a href="ml.html">Machine Learning</a></li>
+                <li><a href="ds.html">Data Science</a></li>
+                <li><a href="da.html">Data Analysis</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+        </div>
+      </nav>
+    
+    
+    <script>
+      aboutDropdown.addEventListener("click", function (event) {
+      event.stopPropagation(); // Prevent closing the dropdown when clicking on ABOUT
+      const submenu = this.querySelector(".dropdown-menu");
+      submenu.classList.toggle("open");
+      console.log("About dropdown clicked...");
+    });
+    
+    // Event listener for clicking on SERVICES dropdown in mobile view
+    const servicesDropdown = document.getElementById("showServicesDrop");
+    servicesDropdown.addEventListener("click", function (event) {
+      event.stopPropagation(); // Prevent closing the dropdown when clicking on SERVICES
+    });
+    
+    // Event listener for clicking on TRAINING dropdown in mobile view
+    const trainingDropdown = document.getElementById("showTrainingDrop");
+    trainingDropdown.addEventListener("click", function (event) {
+      event.stopPropagation(); // Prevent closing the dropdown when clicking on TRAINING
+    });
+    </script>
+    
   
   <!-- navBar end -->
   
