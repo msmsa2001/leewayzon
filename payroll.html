@@ -1,236 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payroll</title>
-    <link rel="stylesheet" href="service.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PayRoll</title>
+  <link rel="stylesheet" href="service.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Popin&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?famivendor/bootstrap-icons/bootstrap-ly=Roboto" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="assets/icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="global.css">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!-- navbar Start -->
-<div class="topnav" id="myTopnav">
-    <a href="#home">Home</a>
-     <div class="dropdown">
-      <button class="dropdownbtn">About Us 
-          <i class="fa-solid fa-chevron-down"></i>    
-      </button>
-      <div class="dropdown-content">
-        <a href="#">Who We Are</a>
-        <a href="#">Tech-Expert</a>
-        <a href="#">Search Methodology</a>
-        <a href="#">Strategy </a>
-      </div>
-    </div> 
-    <div class="dropdown">
-      <button class="dropdownbtn">Service 
-          <i class="fa-solid fa-chevron-down"></i>    
-      </button>
-      <div class="dropdown-content">
-        <a href="#">RPO</a>
-        <a href="#">PAY-ROLL SERVICE</a>
-        <a href="#">CONTRACT STAFFING</a>
-        <a href="#">HR OUTSOURCING</a>
-        <a href="#">DIRECT PLACEMENT</a>
-        <a href="#">Corporate training</a>
-  
-      </div>
-    </div> 
-    <div class="dropdown">
-      <button class="dropdownbtn">Training 
-          <i class="fa-solid fa-chevron-down"></i>    
-      </button>
-      <div class="dropdown-content">
-        <a href="#">Front-End Developer</a>
-        <a href="#">Back-End Developer</a>
-        <a href="#">Full Stack Developer</a>
-        <a href="#">UI/UX</a>
-        <a href="#">Artificial Intelligence</a>
-        <a href="#">Machine Learning</a>
-        <a href="#">Data Science</a>
-        <a href="#">Data Analysis</a>
-      </div>
-    </div> 
-    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-    <a href="#contact">Contact</a>
-  
+  <!-- navbar Start -->
+  <div class="navbar">
+    <div class="logo">
+      <img src="assets/home/logo.svg">
+    </div>
+    <div class="navs">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="index.html#training">Training</a></li>
+        <li class="service"><a href="index.html#services">Services</a><i class="fa-solid fa-chevron-down" id="dropdown"></i>
+          <ul class="drop-menu">
+            <li><a href="rpo.html">Rpo</a></li>
+            <li><a href="payroll.html">Pay-roll Services</a></li>
+            <li><a href="contract-staffing.html">Contract staffing</a></li>
+            <li><a href="hr-outsourcing.html">HR outsourcing</a></li>
+            <li><a href="direct-placement.html">Direct Placement</a></li>
+            <li><a href="corporate-training.html">Corporate Training</a></li>
+          </ul>
+        </li>
+        <!-- <li><a href="">Contact us</a></li> -->
+        <i class="fa-solid fa-bars" onclick="sidebar()" id="sidebar"></i>
+      </ul>
+    </div>
+    <div class="button">
+      <a href=""><button>Contact us<i class="fa-solid fa-arrow-up"
+            style=" transform: rotate(45deg); margin-left: 0.6rem; font-size: 12.8px;"></i></button></a>
+    </div>
   </div>
-  
-  <script>
-      function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-          x.className += " responsive";
-        } else {
-          x.className = "topnav";
-        }
-      }
-      </script>
-  
+  <div class="side-bar" id="side-bar">
+    <ul>
+      <li><a href="">Home</a></li>
+      <li><a href="">About us</a></i></li>
+      <li class="side-service"><a href="index.html#services">Services</a></li>
+      <li><a href="index.html#training">Training</a></li>
+      <div class="button">
+        <a href=""><button>Contact us<i class="fa-solid fa-arrow-up"
+              style=" transform: rotate(45deg); margin-left: 0.6rem; font-size: 12.8px;"></i></button></a>
+      </div>
+    </ul>
+  </div>
+
   <!-- navBar end -->
-  
+
   <!-- container 1 start  -->
-  <div class="container1">
-    <img src="assests/payroll.jpeg" alt="">
+  <div class="container1" style=" padding-top: 3rem;">
+    <img src="assets/rpo-bg-image1.svg" alt="">
     <div class="attached-text">
-        <p class="hero-title">Wave Goodbye to Payroll Frustrations. Say Hello to Business Growth</p>
-        <p class="hero-para">Our tailored approach ensures accuracy, compliance, and efficiency, allowing you to wave goodbye to payroll errors and compliance risks. With our expertise at your disposal, you can rest assured that payroll processing is hassle-free, freeing up valuable time and resources to focus on driving strategic initiatives and achieving organizational goals. Experience the peace of mind that comes with seamless payroll solutions, and say hello to smoother operations and accelerated business success.</p>
+      <p class="hero-title">Wave Goodbye to Payroll Frustrations. Say Hello to Business Growth</p>
+      <p class="hero-para">Our tailored approach ensures accuracy, compliance, and efficiency, allowing you to wave
+        goodbye to payroll errors and compliance risks. With our expertise at your disposal, you can rest assured that
+        payroll processing is hassle-free, freeing up valuable time and resources to focus on driving strategic
+        initiatives and achieving organizational goals. Experience the peace of mind that comes with seamless payroll
+        solutions, and say hello to smoother operations and accelerated business success.</p>
     </div>
-</div>  <!-- container 1 end  -->
+  </div> <!-- container 1 end  -->
 
-    <!-- container 2 start  -->
-    <div class="container2">
-      <div class="sec-1" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-sine">
-        <p class="title">Breaking Down Pay-roll Services:</p>
-        <p>Recruitment refers to the process of identifying, attracting, and hiring qualified candidates for job vacancies within an organization. The goal of recruitment is to find the most suitable individuals who possess the necessary skills, qualifications, and experience to meet the requirements of the job and contribute effectively to the organisation's success. 
-        </p>
+  <!-- container 2 start  -->
+  <div class="container2">
+    <div class="sec-1">
+      <p class="title">Breaking Down Pay-roll Services.</p>
+      <p>Payroll services streamline the intricate tasks of payroll management by outsourcing responsibilities like
+        processing, tax calculations, and ensuring legal compliance to a third-party provider. This alleviates the
+        burden on businesses, allowing them to focus on core operations while ensuring accurate and timely payment to
+        employees. These services often offer a range of features, from handling deductions and benefits to generating
+        tax forms, offering a comprehensive solution to payroll needs.
+
+      </p>
+    </div>
+    <div class="sec-2">
+      <img src="assets/payroll-vector.svg" alt="" id="image">
+    </div>
+  </div>
+  <!-- container 2 end  -->
+
+  <div class="container5">
+    <div class="sec-1">
+      <img src="assets/Direct-placement.svg" alt="">
+    </div>
+    <div class="sec-2">
+      <p class="title">Comprehensive Payroll Solutions for IT Companies by Leewayzon.</p>
+      <p>Leewayzon Consultancy offers comprehensive payroll services designed to alleviate the frustrations associated
+        with payroll processing and foster business growth. Their tailored approach ensures accuracy, compliance, and
+        efficiency, allowing clients to bid farewell to payroll errors and compliance risks. With Leewayzon's expertise,
+        payroll processing becomes hassle-free, freeing up valuable time and resources to focus on strategic initiatives
+        and organizational goals. Clients experience seamless payroll solutions, leading to smoother operations and
+        accelerated business success.
+
+      </p>
+    </div>
+
+  </div>
+  <!-- container 3 start  -->
+  <div class="container3">
+    <p class="title">Types Of <span>Pay-roll Service</span> <br><span> provided by Leewayzon</span></p>
+    <div class="inner-sec">
+      <div class="card1">
+        <img src="assets/php.svg.svg" alt="">
+        <div class="card-title">In-house Pay-roll</div>
+        <div class="card-content">
+          In-house payroll refers to managing payroll processes internally within the organisation. The company handles
+          all aspects of payroll, including salary calculations, deductions, taxes, and payment processing, using its
+          own resources and systems.
+        </div>
       </div>
-      <div class="sec-2" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-sine">
-        <img src="assests/Data extraction-cuate 1.svg" alt="" id="image">
+
+      <div class="card1">
+        <img src="assets/php.svg.svg" alt="">
+        <div class="card-title">Permanent Payroll </div>
+        <div class="card-content">
+          Permanent payroll involves hiring employees directly as full-time or part-time staff members of the
+          organisation. The company manages payroll internally for these permanent employees, providing regular
+          salaries, benefits, and complying with labour laws and regulations.
+        </div>
+      </div>
+
+      <div class="card1">
+        <img src="assets/php.svg.svg" alt="">
+        <div class="card-title">Contract Staffing or Temporary Pay-roll</div>
+        <div class="card-content">
+          IT companies often hire contract or temporary staff for specific projects or periods. In such cases, contract
+          staffing agencies may manage payroll for these temporary employees, handling salary payments, benefits
+          administration, and compliance with labour regulations.
+        </div>
+      </div>
+
+      <div class="card1">
+        <img src="assets/php.svg.svg" alt="">
+        <div class="card-title">Third-Party Pay-roll</div>
+        <div class="card-content">
+          Third-party payroll services are provided by external service providers specialising in payroll management.
+          These providers handle payroll processes on behalf of the client company, offering services such as salary
+          calculations, tax filings, compliance management, and payment processing.
+        </div>
+      </div>
+
+      <div class="card1">
+        <img src="assets/php.svg.svg" alt="">
+        <div class="card-title">Pay-roll Processing Software Solutions</div>
+        <div class="card-content">
+          Payroll processing software solutions are tools that facilitate in-house payroll management. These software
+          applications automate payroll processes, including salary calculations, tax deductions, time tracking, and
+          generating payroll reports, offering efficiency and accuracy in payroll administration.
+        </div>
+      </div>
+
+      <div class="card1">
+        <img src="assets/php.svg.svg" alt="">
+        <div class="card-title">Global Pay-roll Management</div>
+        <div class="card-content">
+          Global payroll management services cater to IT companies with an international presence. These services help
+          manage payroll processes across multiple countries, ensuring compliance with local tax laws, labour
+          regulations, and currency conversions for diverse workforce locations.
+        </div>
+      </div>
+
+      <div class="card1">
+        <img src="assets/php.svg.svg" alt="">
+        <div class="card-title">Compliance and Regulatory Support</div>
+        <div class="card-content">
+          Some payroll service providers specialise in offering compliance and regulatory support, helping IT companies
+          navigate complex payroll regulations, tax laws, and labour requirements, ensuring adherence to legal standards
+          and mitigating compliance risks.
+        </div>
+      </div>
+
+      <div class="card1">
+        <img src="assets/php.svg.svg" alt="">
+        <div class="card-title">Offshore Payroll Services</div>
+        <div class="card-content">
+          Offshore payroll services involve outsourcing payroll functions to a service provider located in another
+          country. IT companies may choose offshore payroll services to benefit from cost savings, access to specialised
+          expertise, or to streamline global payroll management for their international workforce.
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- container 3 end -->
+
+  <div class="container5">
+    <div class="sec-1">
+      <img src="assets/Direct-placement.svg" alt="">
+    </div>
+    <div class="sec-2">
+      <p class="title">Global Payroll Solutions by Leewayzon Consultancy.</p>
+      <p>With Leewayzon Consultancy's payroll services, clients can choose the most suitable option for their business
+        needs, whether it's managing payroll internally, outsourcing to third-party providers, utilizing specialized
+        software tools, or streamlining global payroll management for international workforces. By offering
+        comprehensive solutions and expertise in compliance and regulatory support, Leewayzon Consultancy enables
+        clients to navigate complex payroll regulations, ensure legal adherence, and achieve peace of mind in payroll
+        processing, ultimately contributing to business growth and success.
+
+      </p>
+    </div>
+
+  </div>
+  <div class="footer">
+    <img src="assets/home/logo.svg" width="25%">
+    <div class="container">
+      <div class="box">
+        <p class="email">leewayzon@gmail.com</p>
+        <p><a href="tel: +91 571321648">+91 571 321 648</a></p>
+        <span>Lokmanya tilak nagar,
+          <br>Mumbai-400072</span>
+      </div>
+      <div class="box">
+        <p>Leewayzon</p>
+        <ul>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Contact us</a></li>
+          <li><a href="">Careers</a></li>
+        </ul>
+      </div>
+      <div class="box">
+        <p>Services</p>
+        <ul>
+          <li><a href="rpo.html">Rpo</a></li>
+          <li><a href="payroll.html">Pay-roll Services</a></li>
+          <li><a href="contract-staffing.html">Contract staffing</a></li>
+          <li><a href="hr-outsourcing.html">HR outsourcing</a></li>
+          <li><a href="direct-placement.html">Direct Placement</a></li>
+          <li><a href="corporate-training.html">Corporate Training</a></li>
+        </ul>
+      </div>
+      <div class="box">
+        <p>Industries</p>
+        <ul>
+          <li><a href="">Our Company</a></li>
+          <li><a href="">Our People</a></li>
+          <li><a href="">Search Methadology</a></li>
+          <li><a href="">Strategy</a></li>
+        </ul>
       </div>
     </div>
-      <!-- container 2 end  -->
-
-     <!-- container 3 start  -->
-    <div class="container3">
-        <p class="title">Types of Pay-roll Service</p>
-        <div class="sec-1">
-            <div class="content" data-aos="zoom-in-right" data-aos-duration="1000" data-aos-easing="ease-in-sine">
-                <ul>
-                    <li>In-house Pay-roll</li>
-                </ul>
-                <p>In-house payroll refers to managing payroll processes internally within the organisation. The company handles all aspects of payroll, including salary calculations, deductions, taxes, and payment processing, using its own resources and systems.
-                </p>
-            </div>
-
-            <div class="content" data-aos="zoom-in-right" data-aos-duration="1000" data-aos-easing="ease-in-sine">
-                <ul>
-                    <li>Permanent Payroll </li>
-                </ul>
-                <p>Permanent payroll involves hiring employees directly as full-time or part-time staff members of the organisation. The company manages payroll internally for these permanent employees, providing regular salaries, benefits, and complying with labour laws and regulations.
-                </p>
-            </div>
-
-            <div class="content" data-aos="zoom-in-right" data-aos-duration="1000" data-aos-easing="ease-in-sine">
-                <ul>
-                    <li>Contract Staffing or Temporary Pay-roll</li>
-                </ul>
-                <p>IT companies often hire contract or temporary staff for specific projects or periods. In such cases, contract staffing agencies may manage payroll for these temporary employees, handling salary payments, benefits administration, and compliance with labour regulations.
-                </p>
-            </div>
-
-            <div class="content" data-aos="zoom-in-right" data-aos-duration="1000" data-aos-easing="ease-in-sine">
-                <ul>
-                    <li>
-                        Third-Party Pay-roll
-                    </li>
-                </ul>
-                <p>Third-party payroll services are provided by external service providers specialising in payroll management. These providers handle payroll processes on behalf of the client company, offering services such as salary calculations, tax filings, compliance management, and payment processing.
-                </p>
-            </div>
-
-            <div class="content" data-aos="zoom-in-right" data-aos-duration="1000" data-aos-easing="ease-in-sine">
-                <ul>
-                    <li>Pay-roll Processing Software Solutions</li>
-                </ul>
-                <p>Payroll processing software solutions are tools that facilitate in-house payroll management. These software applications automate payroll processes, including salary calculations, tax deductions, time tracking, and generating payroll reports, offering efficiency and accuracy in payroll administration.
-                </p>
-            </div>
-
-            <div class="content" data-aos="zoom-in-right" data-aos-duration="1000" data-aos-easing="ease-in-sine">
-                <ul>
-                    <li>Global Pay-roll Management</li>
-                </ul>
-                <p>Global payroll management services cater to IT companies with an international presence. These services help manage payroll processes across multiple countries, ensuring compliance with local tax laws, labour regulations, and currency conversions for diverse workforce locations.
-                </p>
-            </div>
-
-            <div class="content" data-aos="zoom-in-right" data-aos-duration="1000" data-aos-easing="ease-in-sine">
-                <ul>
-                    <li>Compliance and Regulatory Support</li>
-                </ul>
-                <p>Some payroll service providers specialise in offering compliance and regulatory support, helping IT companies navigate complex payroll regulations, tax laws, and labour requirements, ensuring adherence to legal standards and mitigating compliance risks.
-                </p>
-            </div>
-
-            <div class="content" data-aos="zoom-in-right" data-aos-duration="1000" data-aos-easing="ease-in-sine">
-                <ul>
-                    <li>Offshore Payroll Services</li>
-                </ul>
-                <p>Offshore payroll services involve outsourcing payroll functions to a service provider located in another country. IT companies may choose offshore payroll services to benefit from cost savings, access to specialised expertise, or to streamline global payroll management for their international workforce.
-                </p>
-            </div>
-        </div>
+    <div class="pvt">
+      <div>
+        <p>Made in 2024 by Leewayzon• All rights reserved</p>
+      </div>
+      <div class="social_icons">
+        <a href="https://www.facebook.com/profile.php?id=100080753131130"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.linkedin.com/company/leewayzon/"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/leewayzon/"><i class="fa-brands fa-instagram"></i></a>
+        <a href=""> <i class="fa-brands fa-twitter"></i></a>
+      </div>
     </div>
-      <!-- container 3 end  -->
-      <footer>
-        <div class="footer-content">
-            <div class="section1">
-            <div class="sec1">
-                <p class="footer-title">Direct Links</p>
-                <p><a href="Who-we-are.html">our company</a></p>
-                <p> <a href="people.html">our people</a></p>
-                <p><a href="searchMethodology.html">search methodology</a></p>
-                <p><a href="strategy.html">strategy</a></p>
-            </div>
-            <div class="sec1">
-                <p class="footer-title">Services</p>
-                <p><a href="rpo.html">RPO</a></p>
-                <p><a href="payroll.html">Pay-roll Service</a></p>
-                <p><a href="staffing.html">Contract Staffing</a></p>
-                <p><a href="hr.html">HR Outsourcing</a></p>
-                <p><a href="placment.html">Direct Placement</a></p>
-                <p><a href="corporate.html">Corporate Training</a></p>
-            </div>
-            <div class="sec1">
-                <p class="footer-title">Training</p>
-                <p><a href="Frontend.html">Front-end development</a></p>
-                <p><a href="backend.html">back-end development</a></p>
-                <p><a href="fullstack.html">full stack development</a></p>
-                <p><a href="ui-ux.html">ui/ux designing</a></p>
-                <p><a href="ai.html">artificial intelligance</a></p>
-                <p><a href="ml.html">machine learnig</a></p>
-                <p><a href="ds.html">data science</a></p>
-                <p><a href="da.html">data analysis</a></p>
-            </div>
-        </div>
-            <div class="section2">
-                <p class="footer-title">Newsletter</p>
-                <div class="news-sec">
-                <input type="text" placeholder="Enter Your Email">
-                <button>Subscibe</button>
-            </div>
-            <p>Subscribe to our newsletter and unlock a world of exclusive benefits. Be the first to know about our latest products, special promotions, and exciting updates. Join our community of like-minded individuals who share a passion for your Leewayzon.</p>
-            </div>
-        </div>
-        <div class="footer">
-            <div class="col1">
-                <p>© 2023 All rights reserved</p>
-            </div>
-            <div class="col2">
-                    <p>Terms</p>
-                    <p>Privacy</p>
-                    <p>Cookies</p>
-            </div>
-            <div class="col3">
-                <a href="https://www.facebook.com/people/Leewayzon/100080753131130/"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="mailto:hr@leewayzon.com"><i class="fa-regular fa-envelope"></i></i></a>
-                <a href="https://www.instagram.com/leewayzon/"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/company/leewayzon/about/"><i class="fa-brands fa-linkedin-in"></i></a>
-    
-            </div>
-        </div>
-     </footer>
-    
-    
-     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-     <script>
-         AOS.init();
-       </script>
+  </div>
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
+
 </html>

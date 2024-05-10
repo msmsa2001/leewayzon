@@ -1,284 +1,642 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="index.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Popin&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?famivendor/bootstrap-icons/bootstrap-ly=Roboto" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="assets/icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="global.css">
+  <link rel="stylesheet" href="style.css">
+
+
+  <title>Leewayzon</title>
 </head>
+
 <body>
-<!-- navbar Start -->
-<div class="topnav" id="myTopnav">
-  <a href="#home">Home</a>
-   <div class="dropdown">
-    <button class="dropdownbtn">About Us 
-        <i class="fa-solid fa-chevron-down"></i>    
-    </button>
-    <div class="dropdown-content">
-      <a href="#">Who We Are</a>
-      <a href="#">Tech-Expert</a>
-      <a href="#">Search Methodology</a>
-      <a href="#">Strategy </a>
+
+  <div class="navbar">
+    <div class="logo">
+      <img src="assets/home/logo.svg">
     </div>
-  </div> 
-  <div class="dropdown">
-    <button class="dropdownbtn">Service 
-        <i class="fa-solid fa-chevron-down"></i>    
-    </button>
-    <div class="dropdown-content">
-      <a href="#">RPO</a>
-      <a href="#">PAY-ROLL SERVICE</a>
-      <a href="#">CONTRACT STAFFING</a>
-      <a href="#">HR OUTSOURCING</a>
-      <a href="#">DIRECT PLACEMENT</a>
-      <a href="#">Corporate training</a>
-
+    <div class="navs">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="#training">Training</a></li>
+        <li class="service"><a href="index.html#services">Services</a><i class="fa-solid fa-chevron-down" id="dropdown"></i>
+          <ul class="drop-menu">
+            <li><a href="rpo.html">Rpo</a></li>
+            <li><a href="payroll.html">Pay-roll Services</a></li>
+            <li><a href="contract-staffing.html">Contract staffing</a></li>
+            <li><a href="hr-outsourcing.html">HR outsourcing</a></li>
+            <li><a href="direct-placement.html">Direct Placement</a></li>
+            <li><a href="corporate-training.html">Corporate Training</a></li>
+          </ul>
+        </li>
+        <!-- <li><a href="">Contact us</a></li> -->
+        <i class="fa-solid fa-bars" onclick="sidebar()" id="sidebar"></i>
+      </ul>
     </div>
-  </div> 
-  <div class="dropdown">
-    <button class="dropdownbtn">Training 
-        <i class="fa-solid fa-chevron-down"></i>    
-    </button>
-    <div class="dropdown-content">
-      <a href="#">Front-End Developer</a>
-      <a href="#">Back-End Developer</a>
-      <a href="#">Full Stack Developer</a>
-      <a href="#">UI/UX</a>
-      <a href="#">Artificial Intelligence</a>
-      <a href="#">Machine Learning</a>
-      <a href="#">Data Science</a>
-      <a href="#">Data Analysis</a>
+    <div class="button">
+      <a href=""><button>Contact us<i class="fa-solid fa-arrow-up"
+            style=" transform: rotate(45deg); margin-left: 0.6rem; font-size: 12.8px;"></i></button></a>
     </div>
-  </div> 
-  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-  <a href="#contact">Contact</a>
+  </div>
+  <div class="side-bar" id="side-bar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About us</a></i></li>
+      <li class="side-service"><a href="#services">Services</a></li>
+      <li><a href="index.html#training">Training</a></li>
+      <div class="button">
+        <a href=""><button>Contact us<i class="fa-solid fa-arrow-up"
+              style=" transform: rotate(45deg); margin-left: 0.6rem; font-size: 12.8px;"></i></button></a>
+      </div>
+    </ul>
+  </div>
+  <div class="home" style=" padding-top: 3rem;">
+    <div class="hero">
+      <div class="upper-text">
+        <span>Your hiring partner</span>
+        <h2>Whether you need 2, 20, or 2000 people, we've got you covered.</h2>
+        <div class="google-text">
+          <p>We bring your ideas to life, working with the best talent and partners to deliver excellence.
+            It's time for something better.</p>
+          <div class="google">
+            <img src="assets/home/google.svg">
+            <div class="star">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
 
-</div>
-
-<script>
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
-      }
-    }
-    </script>
-
-<!-- navBar end -->
-
-<!-- container 1 start  -->
-<div class="container1">
-    <img src="assests/hero.jpeg" alt="">
-    <div class="attached-text">
-        <p class="hero-title">IF YOU ARE LOOKING TO HIRE 2 PEOPLE 20 PEOPLE OR 2000 WE CAN FIND THEM FOR YOU.</p>
-        <p class="hero-para">Whatever you understand better to be, we are the ones that make it come through. Because your best encourages us to find out the best and brightest in the industry, create a partnership with the best companies in the fields and send out only the best talent to the marketplace. Don’t you think it is time for something better?</p>
-    </div>
-</div>
-<!-- container 1 end  -->
-
-<!-- container 2 start  -->
-<div class="conatiner2">
-    <div class="sec-1" data-aos="fade-right" data-aos-offset="300"
-    data-aos-easing="ease-in-sine" data-aos-duration="1000">
-        <p class="about-title">Who We Are?</p>
-        <p class="about-para">Welcome to Leewayzon Consultancy, where innovation meets expertise in the dynamic world of technology solutions. With a passion for pushing boundaries and a commitment to excellence, we are dedicated to helping businesses thrive in the digital age.</p>
-        <div class="about-box">
-            <div class="box">
-                <p><span style="font-weight: 600;">Expertise:</span> Our seasoned professionals bring industry experience and technical know-how to deliver top-notch solutions.</p>
             </div>
-            <div class="box">
-            <p><span style="font-weight: 600;">Innovation:</span> We thrive on creativity and continuously explore cutting-edge technologies for innovative solutions.</p>
+            <span>4.9</span>
+          </div>
+        </div>
+      </div>
+      <div class="upper-form">
+        <!-- <h4>
+          Get a Free Consultation
+        </h4>
+        <form>
+          <input type="text" class="form-control" name="Full name" placeholder="Full name">
+          <input type="text" class="form-control" name="Full name" placeholder="Enter email eddress">
+          <input type="text" class="form-control" name="Full name" placeholder="Mobile number">
+          <input type="text" class="form-control" name="Full name" placeholder="Area, city">
+          <button type=" submit">Get Quick Quote</button>
+        </form> -->
+        <img src="assets/home/home2.png" class="home-img">
+      </div>
+    </div>
+
+  <!-- About us start-->
+    <div class="about-us">
+      <div class="content">
+        <h3>Who We Are?</h3>
+        <p>Welcome to Leewayzon Consultancy, where innovation meets expertise in the dynamic world of technology
+          solutions. With a passion for pushing boundaries and a commitment to excellence, we are dedicated to
+          helping businesses thrive in the digital age.</p>
+        <div class="container">
+          <div class="box">
+            <span>Expertise:</span> Our seasoned prfessionals bring industry experience and technical
+            know-how to deliver top-notch solutions.
+
+          </div>
+          <div class="box">
+            <span>Innovation:</span> We thrive on creativity and continuously explore cutting-edge technologies for
+            innovative solutions.
+
+          </div>
+        </div>
+      </div>
+      <div class="img">
+        <img src="assets/home/about.png">
+      </div>
+    </div>
+  <!-- About us end-->
+  <!-- Companies-->
+    <div class="companies">
+      <div class="img" id="img1">
+        <img src="assets/company/c1.webp" alt="">
+      </div>
+      <div class="img">
+        <img src="assets/company/c2.png" alt="">
+      </div>
+      <div class="img">
+        <img src="assets/company/c3.png" alt="">
+      </div>
+      <div class="img">
+        <img src="assets/company/c4.png" alt="">
+      </div>
+      <div class="img" id="img1">
+        <img src="assets/company/c5.png" alt="">
+      </div>
+      <div class="img">
+        <img src="assets/company/c6.png" alt="">
+      </div>
+      <div class="img">
+        <img src="assets/company/c7.png" alt="">
+      </div>
+      <div class="img">
+        <img src="assets/company/c8.png" alt="">
+      </div>
+      <div class="img" >
+        <img src="assets/company/c9.png" alt="">
+      </div>
+      <div class="img">
+        <img src="assets/company/c14.png" alt="">
+      </div>
+      <div class="img">
+        <img src="assets/company/c13.png" alt="">
+      </div>
+      <div class="img">
+        <img src="assets/company/c12.png" alt="">
+      </div>
+    </div>
+  <!-- Services start-->
+    <section id="services" class="services">
+      <div class="container" data-aos="fade-up">
+        <header class="section-header">
+          <h2>Services</h2>
+          <p>
+            Embark on a journey of IT mastery with bespoke training solutions crafted to match your ambitions and
+            aspirations
+          </p>
+        </header>
+        <div class="containers">
+          <div class="box">
+            <div class="img">
+              <span class="material-symbols-outlined">
+              laptop_mac
+              </span></div>
+              <h4>RPO</h4>
+              <p>Process of identifying, attracting, and hiring
+                qualified candidates for job vacancies within an
+               organization.</p>
+               <a href="rpo.html">
+                <span>Read More</span> <i
+                   class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <div class="box">
+            <div class="img">
+              <span class="material-symbols-outlined">
+              laptop_mac
+              </span></div>
+              <h4>PAY-ROLL SERVICE              </h4>
+              <p>outsourcing specific aspects of payroll administration, such as payroll processing, tax withholding, and compliance, to a third-party provider.</p>
+               <a href="payroll.html">
+                <span>Read More</span> <i
+                   class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <div class="box">
+            <div class="img">
+              <span class="material-symbols-outlined">
+              laptop_mac
+              </span></div>
+              <h4>CONTRACT STAFFING              </h4>
+              <p> Contract staffing is the process of employing workers on a short-term basis.</p>
+               <a href="contract-staffing.html">
+                <span>Read More</span> <i
+                   class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <div class="box">
+            <div class="img">
+              <span class="material-symbols-outlined">
+              laptop_mac
+              </span></div>
+              <h4>HR OUTSOURCING</h4>
+              <p> HR outsourcing is the practice of partnering with external specialists or firms to manage various aspects of human resource functions</p>
+               <a href="hr-outsourcing.html">
+                <span>Read More</span> <i
+                   class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <div class="box">
+            <div class="img">
+              <span class="material-symbols-outlined">
+              laptop_mac
+              </span></div>
+              <h4>DIRECT PLACEMENT</h4>
+              <p>  Permanent hiring in IT involves recruiting individuals for long-term roles in technology-focused firms.</p>
+               <a href="direct-placement.html">
+                <span>Read More</span> <i
+                   class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <div class="box">
+            <div class="img">
+              <span class="material-symbols-outlined">
+              laptop_mac
+              </span></div>
+              <h4>CORPORATE TRAINING
+              </h4>
+              <p> Corporate training services refer to programs and initiatives designed to enhance the skills, knowledge, and capabilities of employees within an organization.</p>
+               <a href="corporate-training.html">
+               <span>Read More</span> <i
+                  class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+
+        <!-- <div class="row gy-4" id="container">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-box blue">
+              <i class="ri-globe-line icon"><i class="fa-solid fa-globe"></i></i>
+              <h3>Rop</h3>
+              <p>
+                Process of identifying, attracting, and hiring
+                qualified candidates for job vacancies within an
+                organization.
+              </p>
+              <a href="services.html" class="read-more"><span>Read More</span> <i
+                  class="fa-solid fa-arrow-right"></i></a>
             </div>
-        </div>
-    </div>
-    <div class="sec2" data-aos="fade-right" data-aos-offset="300"
-    data-aos-easing="ease-in-sine" data-aos-duration="1000">
-        <img src="assests/man-wearing-t-shirt-gesturing 1.png" alt="">
-    </div>
-</div>
-<!-- container 2 end  -->
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-box red">
+              <i class="ri-cellphone-line icon"><i class="fa-solid fa-globe"></i></i>
+              <h3>PAY-ROLL SERVICE:
+              </h3>
+              <p>
+                Process of identifying, attracting, and hiring
+                qualified candidates for job vacancies within an
+                organization.
+              </p>
+              <a href="services.html" class="read-more"><span>Read More</span> <i
+                  class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-box orange">
+              <i class="ri-shopping-bag-line icon"><i class="fa-solid fa-globe"></i></i>
+              <h3>CONTRACT STAFFING
+              </h3>
+              <p>
+                Process of identifying, attracting, and hiring
+                qualified candidates for job vacancies within an
+                organization.
+              </p>
+              <a href="services.html" class="read-more"><span>Read More</span> <i
+                  class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-box green">
+              <i class="ri-apps-line icon"><i class="fa-solid fa-globe"></i></i>
+              <h3>HR OUTSOURCING</h3>
+              <p>
+                Process of identifying, attracting, and hiring
+                qualified candidates for job vacancies within an
+                organization.
+              </p>
+              <a href="services.html" class="read-more"><span>Read More</span> <i
+                  class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
 
-<!-- container 3 start  -->
-<div class="conatiner3">
-    <p class="servic-title">Services</p>
-    <p class="service-para">Embark on a journey of IT mastery with bespoke training solutions crafted to match your ambitions and aspirations</p>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-box purple">
+              <i class="ri-test-tube-line icon"><i class="fa-solid fa-globe"></i></i>
+              <h3>Direct Placement</h3>
+              <p>
+                Process of identifying, attracting, and hiring
+                qualified candidates for job vacancies within an
+                organization.
+              </p>
+              <a href="services.html" class="read-more"><span>Read More</span> <i
+                  class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
 
-    <div class="service-sec" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="1000">
-        <div class="card1">
-            <i class="material-symbols-outlined">devices</i>
-            <p class="title">RPO</p>
-            <p class="para"> process of identifying, attracting, and hiring qualified candidates for job vacancies within an organization.</p>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="700">
+            <div class="service-box pink">
+              <i class="ri-database-2-line icon"><i class="fa-solid fa-globe"></i></i>
+              <h3>Corporate training</h3>
+              <p>
+                Process of identifying, attracting, and hiring
+                qualified candidates for job vacancies within an
+                organization.
+              </p>
+              <a href="services.html" class="read-more"><span>Read More</span> <i
+                  class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </section>
+  <!-- Services end-->
+  <!-- Training start-->
+    <div class="training" id="training">
+      <div class="head">
+        <div class="header">
+          <h2>Empower IT: <br> Your Training Hub</h2>
+          <p>Embark on a journey of IT mastery with bespoke training solutions crafted to match your ambitions
+            and
+            aspirations.</p>
         </div>
-        <div class="card1">
-            <i class="fa-solid fa-money-check-dollar"></i>            
-            <p class="title">PAY-ROLL SERVICE</p>
-            <p class="para"> process of identifying, attracting, and hiring qualified candidates for job vacancies within an organization.</p>
+        <div class="img">
+          <img src="assets/home/Vector.svg" style="width: 90%;">
         </div>
-        <div class="card1">
-            <i class="fa-solid fa-money-check-dollar"></i>            
-            <p class="title">CONTRACT STAFFING</p>
-            <p class="para"> Contract staffing is the process of employing workers on a short-term basis.</p>
+      </div>
+      <div class="container">
+        <div class="box">
+          <h6>01</h6>
+          <h4>Front-end Developer</h4>
+          <p>Front-end development refers to the process of creating the user interface (UI) and user experience (UX) of
+            a website or web application. It involves designing and implementing the visual elements that users interact
+            with directly in their web browsers.
+          </p>
         </div>
-        <div class="card1">
-            <i class="fa-solid fa-money-check-dollar"></i>            
-            <p class="title"> HR Outsourcing</p>
-            <p class="para"> HR outsourcing is the practice of partnering with external specialists or firms to manage various aspects of human resource functions</p>
+        <div class="box">
+          <h6>02</h6>
+          <h4>Back-End Developer</h4>
+          <p>Back-end development refers to the process of building and maintaining the server-side of web applications.
+            It involves creating the logic, databases, server configuration, and other components that enable the
+            functionality of web applications.</p>
         </div>
-        <div class="card1">
-            <i class="fa-solid fa-money-check-dollar"></i>            
-            <p class="title">Permanent Hiring</p>
-            <p class="para"> Permanent hiring in IT involves recruiting individuals for long-term roles in technology-focused firms.</p>
+        <div class="box">
+          <h6>03</h6>
+          <h4>Full Stack Developer</h4>
+          <p>A full-stack developer is a developer or engineer who can build both the front end and the back end of a
+            website. The front end (the parts of a website a user sees and interacts with) and the back end (the
+            behind-the-scenes data storage and processing) require different skill sets.</p>
         </div>
-        <div class="card1">
-            <i class="fa-solid fa-money-check-dollar"></i>            
-            <p class="title">Corporate Training</p>
-            <p class="para"> Corporate training services refer to programs and initiatives designed to enhance the skills, knowledge, and capabilities of employees within an organization.</p>
+        <div class="box">
+          <h6>04</h6>
+          <h4>Machine Learning </h4>
+          <p>Machine learning development refers to the process of creating and implementing algorithms and models that
+            enable computers to learn from data and make predictions or decisions without being explicitly programmed
+            for each task.</p>
         </div>
+        <div class="box">
+          <h6>05</h6>
+          <h4>Data Science</h4>
+          <p>Data science is an interdisciplinary field that uses scientific methods, algorithms, processes, and systems
+            to extract insights and knowledge from structured and unstructured data. It combines aspects of mathematics,
+            statistics, computer science, domain knowledge, and information science to analyze complex datasets.</p>
+        </div>
+        <div class="box">
+          <h6>06</h6>
+          <h4>Data Analysis</h4>
+          <p>Data analysis is the process of inspecting, cleansing, transforming, and modelling data to uncover useful
+            information, draw conclusions, and support decision-making. It involves examining datasets to identify
+            patterns, trends, correlations, and insights that can inform business strategies, operations, and outcomes.
+          </p>
+        </div>
+        <div class="box">
+          <h6>07</h6>
+          <h4>Artificial Intelligence </h4>
+          <p>If you're intrigued by the booming world of artificial intelligence and find joy in crafting algorithms and
+            computer programming, a career as a highly sought-after artificial intelligence developer could be your
+            perfect fit.</p>
+        </div>
+        <div class="box">
+          <h6>08</h6>
+          <h4>UI/UX Developer</h4>
+          <p>UI/UX design is the process of creating digital interfaces that combine aesthetic appeal (UI) with
+            user-centric functionality (UX). UI design focuses on the visual elements and layout of a product, including
+            colours, typography, and icons, aiming to create an engaging and intuitive interface.</p>
+        </div>
+      </div>
     </div>
-</div>
-<!-- container 3 end  -->
-<div class="container4">
-    <p class="training-title">
-       <span style="color: rgba(137, 210, 227, 1);"> Empower IT:</span> Your Training Hub
-    </p>
-    <p class="training-para">Embark on a journey of IT mastery with bespoke training solutions crafted to match your ambitions and aspirations</p>
-<div class="training">
-    <div class="card" data-aos="zoom-in"  data-aos-duration="1000" data-aos-easing="ease-in-sine">
-        <div class="content">
-        <p class="title">Front-End Developer</p>
-        <p class="para">Front-end development refers to the process of creating the user interface (UI) and user experience (UX) of a website or web application. It involves designing visual elements that users interact with web browsers.
-        </p>
-    </div>
-        <button>Read More</button>
-    </div>
-    <div class="card" data-aos="zoom-in"  data-aos-duration="1000" data-aos-easing="ease-in-sine">
-        <div class="content">
-        <p class="title">Back-End Developer</p>
-        <p class="para">Back-end development refers to the process of building and maintaining the server-side of web applications. It involves creating the logic, databases, server configuration, and other components that enable the functionality of web applications.
-        </p>
+  <!-- Trainign end-->
+    <!-- <div class="feedback">
+      <div class="google">
+        <img src="assets/home/google.svg">
+        <div class="star">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
         </div>
-        <button>Read More</button>
-    </div>
-    <div class="card" data-aos="zoom-in"  data-aos-duration="1000" data-aos-easing="ease-in-sine">
-        <div class="content">
-        <p class="title">Full Stack Developer</p>
-        <p class="para">A full-stack developer is a developer or engineer who can build both the front end and the back end of a website. The front end (the parts of a website a user sees and interacts with) and the back end require different skill sets.
-        </p>
-        </div>
-        <button>Read More</button>
-    </div>
-    <div class="card" data-aos="zoom-in"  data-aos-duration="1000" data-aos-easing="ease-in-sine">
-        <div class="content">
-        <p class="title">Ui/Ux Developer</p>
-        <p class="para">UI/UX design is the process of creating digital interfaces that combine aesthetic appeal (UI) with user-centric functionality (UX).
-        </p>
-        </div>
-        <button>Read More</button>
-    </div>
-    <div class="card" data-aos="zoom-in"  data-aos-duration="1000" data-aos-easing="ease-in-sine">
-        <div class="content">
-        <p class="title">Artificial Intelligence </p>
-        <p class="para">If you're intrigued by the booming world of artificial intelligence and find joy in crafting algorithms and computer programming, a career as a highly sought-after artificial intelligence developer could be your perfect fit.
-        </p>
-        </div>
-        <button>Read More</button>
-    </div>
-    <div class="card" data-aos="zoom-in"  data-aos-duration="1000" data-aos-easing="ease-in-sine">
-        <div class="content">
-        <p class="title">Machine Learning</p>
-        <p class="para">Machine learning development refers to the process of creating and implementing algorithms and models that enable computers to learn from data and make predictions or decisions without being explicitly programmed for each task.
-        </p></div>
-        <button>Read More</button>
-    </div>
-    <div class="card" data-aos="zoom-in"  data-aos-duration="1000" data-aos-easing="ease-in-sine">
-        <div class="content">
-        <p class="title">Data Science</p>
-        <p class="para">Data science is an interdisciplinary field that uses scientific methods, algorithms, processes, and systems to extract insights and knowledge from structured and unstructured data.  science to analyze complex datasets.</p>
-        </div>
-        <button>Read More</button>
-    </div>
-    <div class="card" data-aos="zoom-in"  data-aos-duration="1000" data-aos-easing="ease-in-sine">
-        <div class="content">
-        <p class="title">Data Analysis</p>
-        <p class="para">Data analysis is the process of inspecting, cleansing, transforming, and modelling data to uncover useful information, draw conclusions, and support decision-making.
-        </p>
-        </div>
-        <button>Read More</button>
-    </div>
-</div>
+        <span>4.9</span>
+      </div>
+      <h3>Why our customers <br>
+        love to work with us</h3>
+      <p>Our clients choose us for our expert knowledge, clear <br>
+        communication, commitment to their businesses,<br>
+        ability to adapt, and our trustworthy approach.</p>
 
-</div>
- <footer>
-    <div class="footer-content">
-        <div class="section1">
-        <div class="sec1">
-            <p class="footer-title">Direct Links</p>
-            <p><a href="Who-we-are.html">our company</a></p>
-            <p> <a href="people.html">our people</a></p>
-            <p><a href="searchMethodology.html">search methodology</a></p>
-            <p><a href="strategy.html">strategy</a></p>
+      <div class="container">
+        <div class="box">
+          <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p>It’s clear that they care about our idea, our project, and our
+            company.</p>
+          <h5>Sławomir Czajkowski</h5>
+          <span>CEO, Surfer, 51-200 Employees</span>
         </div>
-        <div class="sec1">
-            <p class="footer-title">Services</p>
-            <p><a href="rpo.html">RPO</a></p>
-            <p><a href="payroll.html">Pay-roll Service</a></p>
-            <p><a href="staffing.html">Contract Staffing</a></p>
-            <p><a href="hr.html">HR Outsourcing</a></p>
-            <p><a href="placment.html">Direct Placement</a></p>
-            <p><a href="corporate.html">Corporate Training</a></p>
+        <div class="box">
+          <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p>It’s clear that they care about our idea, our project, and our
+            company.</p>
+          <h5>Sławomir Czajkowski</h5>
+          <span>CEO, Surfer, 51-200 Employees</span>
         </div>
-        <div class="sec1">
-            <p class="footer-title">Training</p>
-            <p><a href="Frontend.html">Front-end development</a></p>
-            <p><a href="backend.html">back-end development</a></p>
-            <p><a href="fullstack.html">full stack development</a></p>
-            <p><a href="ui-ux.html">ui/ux designing</a></p>
-            <p><a href="ai.html">artificial intelligance</a></p>
-            <p><a href="ml.html">machine learnig</a></p>
-            <p><a href="ds.html">data science</a></p>
-            <p><a href="da.html">data analysis</a></p>
+        <div class="box">
+          <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p>It’s clear that they care about our idea, our project, and our
+            company.</p>
+          <h5>Sławomir Czajkowski</h5>
+          <span>CEO, Surfer, 51-200 Employees</span>
         </div>
-    </div>
-        <div class="section2">
-            <p class="footer-title">Newsletter</p>
-            <div class="news-sec">
-            <input type="text" placeholder="Enter Your Email">
-            <button>Subscibe</button>
+        <div class="box">
+          <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p>It’s clear that they care about our idea, our project, and our
+            company.</p>
+          <h5>Sławomir Czajkowski</h5>
+          <span>CEO, Surfer, 51-200 Employees</span>
         </div>
-        <p>Subscribe to our newsletter and unlock a world of exclusive benefits. Be the first to know about our latest products, special promotions, and exciting updates. Join our community of like-minded individuals who share a passion for your Leewayzon.</p>
+      </div>
+    </div> -->
+    <div class="faq">
+      <div class="img">
+        <h3>Frequently <br>
+          asked questions</h3>
+        <img src="assets/home/faq.svg" style="margin-top: 1.5rem;">
+      </div>
+      <div>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                What is RPO and how does it benefit my company?
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                RPO (Recruitment Process Outsourcing) streamlines hiring processes, ensuring quality hires and reducing
+                management challenges for your company.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                What type of payroll services does Leewayzn offer?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Leewayzon offers various payroll sercices including in-house, permanent, contract, third-party, and
+                global payroll management.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                What is contract staffing and how does it differ from permanent hiring?
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Contract staffing involves employing workers on a short-term basis, whereas permanent hiring recruits
+                individuals for long-term roles within a company.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                What HR functions can Leewayzon outsource for my company?
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Leewayzon can outsource various HR function including training and development, communication, employee
+                engagement, compliance, manpower planning, and organization development.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                What is direct placement and how does it benefit my company?
+              </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Direct placement is a streamlined approach connecting employers with top-tier candidates for permanent
+                positons, ensuring a perfect match for both parties.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                What type of corporate training rograms does Leewayzon offer?
+              </button>
+            </h2>
+            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Leewayzon offers customized corporate training programs covering technical skills,soft skills,
+                leadership development, compliance training, and cross-functional training.
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <div class="footer">
-        <div class="col1">
-            <p>© 2023 All rights reserved</p>
+      <img src="assets/home/logo.svg" width="25%">
+      <div class="container">
+        <div class="box">
+          <p class="email">leewayzon@gmail.com</p>
+          <p><a href="tel: +91 571321648">+91 571 321 648</a></p>
+          <span>Lokmanya tilak nagar,
+            <br>Mumbai-400072</span>
         </div>
-        <div class="col2">
-                <p>Terms</p>
-                <p>Privacy</p>
-                <p>Cookies</p>
+        <div class="box">
+          <p>Leewayzon</p>
+          <ul>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Contact us</a></li>
+            <li><a href="">Careers</a></li>
+          </ul>
         </div>
-        <div class="col3">
-            <a href="https://www.facebook.com/people/Leewayzon/100080753131130/"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="mailto:hr@leewayzon.com"><i class="fa-regular fa-envelope"></i></i></a>
-            <a href="https://www.instagram.com/leewayzon/"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/company/leewayzon/about/"><i class="fa-brands fa-linkedin-in"></i></a>
-
+        <div class="box">
+          <p>Services</p>
+          <ul>
+            <li><a href="rpo.html">Rpo</a></li>
+            <li><a href="payroll.html">Pay-roll Services</a></li>
+            <li><a href="contract-staffing.html">Contract staffing</a></li>
+            <li><a href="hr-outsourcing.html">HR outsourcing</a></li>
+            <li><a href="direct-placement.html">Direct Placement</a></li>
+            <li><a href="corporate-training.html">Corporate Training</a></li>
+          </ul>
         </div>
+        <div class="box">
+          <p>Industries</p>
+          <ul>
+            <li><a href="">Our Company</a></li>
+            <li><a href="">Our People</a></li>
+            <li><a href="">Search Methadology</a></li>
+            <li><a href="">Strategy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="pvt">
+        <div>
+        <p>Made in 2024 by Leewayzon• All rights reserved</p>
+      </div>
+        <div class="social_icons">
+          <a href="https://www.facebook.com/profile.php?id=100080753131130"><i class="fa-brands fa-facebook"></i></a>
+           <a href="https://www.linkedin.com/company/leewayzon/"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/leewayzon/"><i class="fa-brands fa-instagram"></i></a>
+            <a href=""> <i class="fa-brands fa-twitter"></i></a>
+        </div>
+      </div>
     </div>
- </footer>
+  </div>
 
- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init();
-  </script>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>

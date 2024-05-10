@@ -1,0 +1,43 @@
+:root{
+    --nav-padding:1rem 3.6rem;
+    --nav-font-family:Arial, sans-serif;
+    --nav-font-size:15px;
+    --nav-font-weight:500;
+    --nav-font-height:24px;
+    --button-color: #0C59DB;
+    --button-padding:0.5rem 1.5rem;
+    --list-margin-right:2rem;
+    /* h2-size */
+    --h2-size:50px;
+    --h2-font-family:'Popin', sans-serif;
+    --h2-weight:700;
+    --h2-line-height:50px;
+    /* h3-size  */
+    --h3-size:55px;
+    --h3-height:56px;
+    /* h4-size  */
+    --h4-size:24px;
+    --h4-height:27px;
+    /* p-size */
+    --p-weight:400;
+    --p-height:16.8px;
+}
+@media screen and (max-width:952px) {
+    :root{
+        --button-padding:0.3rem 1rem;
+        --list-margin-right:1rem;
+    }
+}
+@media screen and (max-width:850px) {
+    :root{
+        --nav-padding:0.6rem 1rem;
+    }
+}
+@media screen and (max-width:400px) {
+    :root{
+        --h2-size:45px;
+        --h2-line-height:70px;
+        --nav-padding:0.6rem 0.1rem;
+        --h3-size:48px
+    }
+}   
