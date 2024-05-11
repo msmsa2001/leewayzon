@@ -82,7 +82,7 @@ transition: transform 0.5s ease;
   position: fixed;
   right: 0;
   height: 100vh;
-  top: 2rem;
+  top: 3rem;
   width: 15rem;
   z-index: 1111;
   background: #F5FAFE;
@@ -99,6 +99,7 @@ transition: transform 0.5s ease;
 }
 #sidebar {
   display: none;
+  font-size: 24px;
 }
 @media screen and (max-width:761px) {
   #sidebar {
@@ -326,7 +327,9 @@ transition: transform 0.5s ease;
   font-weight: 600;
   font-size: 20px;
 }
-
+.home .services{
+  margin-top: 4rem;
+}
 .section-header p ,.training .head p{
   width: 50%;
 }
@@ -457,6 +460,7 @@ transition: transform 0.5s ease;
   grid-template-columns: 40% 60%;
   align-items: start;
   margin-top: 4rem;
+  padding-bottom: 3rem;
 }
 .accordion-button:not(.collapsed) {
   background-color: transparent !important;
@@ -495,7 +499,6 @@ transition: transform 0.5s ease;
 }
 .footer {
   background: #F5FAFE;
-  /* margin-top: 2rem; */
   padding-top: 2rem;
 }
 .footer .container {
@@ -523,7 +526,6 @@ font-weight: 550;
   padding-left: 0rem !important;
 }
 .footer .container .box ul li{
-  padding-bottom: 0.5rem !important;
   padding-top: 0.5rem;
 }
 .footer .container .box ul li a{
@@ -646,9 +648,15 @@ padding: 2rem 0;
   .footer .pvt{
     flex-direction: column;
   }
+  .footer .container .box p {
+    font-weight: 700;
+}
   .services .container .containers{
     grid-template-columns: auto;
   }
+  .home .services .container .containers {
+    padding: 0.1rem 1.5rem 0.1rem 1.5rem;
+}
   .home-img{
     display: none;
   }
@@ -662,6 +670,12 @@ padding: 2rem 0;
    }
    .training .container{
     grid-template-columns:auto !important;
+  }
+  .navbar{
+    padding: 1rem 1.3rem;
+  }
+  .training .header h2 {
+    line-height: 44px;
   }
 }
 @media screen and (max-width:390px) {

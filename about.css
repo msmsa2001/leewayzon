@@ -434,6 +434,7 @@ nav input{
         line-height: 45px;
         letter-spacing: -1.2px;
         padding: 0 22rem 56px 0;
+        margin-bottom: 0;
       }
       .container4 .inner-sec .sec-2 .para{
         color:#000;
@@ -567,6 +568,7 @@ nav input{
             grid-template-columns: auto;
             gap: 1rem;
           }
+          
 }
       @media screen and (max-width:800px) {
       .container1 .attached-text .hero-title,.container1 .attached-text .hero-para {

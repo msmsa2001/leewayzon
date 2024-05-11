@@ -834,6 +834,9 @@ border-radius: 20px;
 .tab.active {
   display: block;
 }
+.tab.active .container4 .inner-sec .sec-1 .row1{
+  box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.03);
+}
 
 .tab-button {
   cursor: pointer;
