@@ -17,14 +17,34 @@
   <link rel="stylesheet" href="style.css">
 
 
+  <link rel="stylesheet" type="text/css" href="assets/icons.css">
+
+
   <title>Leewayzon</title>
 </head>
 
 <body>
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <form>
+        <input type="number" placeholder="Enter Number *">
+        <input type="email" placeholder="Enter your Email *">
+        <textarea name="" id="" placeholder="message"></textarea>
+        <div class="button">
+          <button class="close" style="background: gray;">Cancel</button>
+          <button class="close">submit</button>
+        </div>
+      </form>
+    </div>
+  <!-- Modal -->
 
+
+  </div>
   <div class="navbar">
     <div class="logo">
-      <img src="assets/home/logo.svg">
+      <a href="index.html">
+      <img src="assets/home/logo.svg"></a>
     </div>
     <div class="navs">
       <ul>
@@ -46,10 +66,13 @@
       </ul>
     </div>
     <div class="button">
-      <a href=""><button>Contact us<i class="fa-solid fa-arrow-up"
-            style=" transform: rotate(45deg); margin-left: 0.6rem; font-size: 12.8px;"></i></button></a>
+      <button id="myBtn">Contact us
+        <i class="fa-solid fa-arrow-up"
+            style=" transform: rotate(45deg); margin-left: 0.6rem; font-size: 12.8px;"></i>
+          </button>
     </div>
   </div>
+ 
   <div class="side-bar" id="side-bar">
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -57,8 +80,8 @@
       <li class="side-service"><a href="#services">Services</a></li>
       <li><a href="index.html#training">Training</a></li>
       <div class="button">
-        <a href=""><button>Contact us<i class="fa-solid fa-arrow-up"
-              style=" transform: rotate(45deg); margin-left: 0.6rem; font-size: 12.8px;"></i></button></a>
+        <button >Contact us<i class="fa-solid fa-arrow-up"
+              style=" transform: rotate(45deg); margin-left: 0.6rem; font-size: 12.8px;"></i></button>
       </div>
     </ul>
   </div>
