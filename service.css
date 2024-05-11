@@ -407,7 +407,12 @@ nav input{
         font-size: 18px;
         font-weight: 500;
       }
-      
+      .tab-button.active{
+        box-shadow: 0 4px 40px 0 rgba(9, 36, 83, 0.08);
+        background-color: var(--white-color2);
+        border-radius: 14px;
+      }
+
       @media screen and (max-width:1100px) {
         :root{
           --padding:4rem;

@@ -477,11 +477,12 @@ nav input{
         border-radius: 14px;
         box-shadow: 0 4px 40px 0 rgba(1, 41, 112, 0.08);
       }
-      .tab-button.active  .container4 .inner-sec .sec-1 .row1{
-        box-shadow: 0 4px 40px 0 rgba(1, 41, 112, 0.08);
+      .tab-button.active{
+        box-shadow: 0 4px 40px 0 rgba(9, 36, 83, 0.08);
         background-color: var(--white-color2);
         border-radius: 14px;
       }
+
 
       .container5{
         padding: 2.3rem 5rem 8rem 5rem;

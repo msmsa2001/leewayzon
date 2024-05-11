@@ -22,4 +22,11 @@ function openTab(tabName) {
         tabContent[i].classList.remove("active");
     }
     document.getElementById(tabName).classList.add("active");
+    tabButtons = document.getElementsByClassName("tab-button");
+    for (i = 0; i < tabButtons.length; i++) {
+        tabButtons[i].classList.remove("active");
+    }
+
+    // Add active class to the corresponding tab button
+    document.querySelector(".tab-button[data-tab='" + tabName + "']").classList.add("active");
 }

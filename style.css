@@ -674,6 +674,10 @@ padding: 2rem 0;
 }
   .companies{
     grid-template-columns: auto auto auto auto;
+  }
+  .companies .img img{
+    width: 85% !important;
+    
    }
    .training .container{
     grid-template-columns:auto !important;
@@ -689,5 +693,12 @@ padding: 2rem 0;
   .about-us .img img{
     width: 80%;
     text-align: center;
+  }
+  .companies{
+    grid-template-columns: auto auto auto;
+  }
+  .companies .img img{
+    width: 92%;
+
   }
 }
