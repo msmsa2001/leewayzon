@@ -261,6 +261,7 @@ transition: transform 0.5s ease;
   font-family: var(--nav-font-family);
   border-radius: 6px;
   font-size: 13px;
+  text-align: center;
 }
 .home .about-us .container .box span {
   color: var(--button-color);
@@ -362,11 +363,13 @@ transition: transform 0.5s ease;
   border-radius: 24px;
   padding: 0.7rem 1.3rem 0.1rem 1.3rem;
   line-height: 4rem;
+  /* position: relative; */
 }
 .services .container .containers .box:hover{
 background: #0C59DB1A;
 transition: transform 0.5s ease;
 }
+
 .services .container .containers .box a:hover i{
   transform: translateX(0.3rem);
   transition: transform 0.5s ease;
@@ -374,6 +377,7 @@ transition: transform 0.5s ease;
 .services .container .containers .box a{
   text-decoration: none;
   color: #1B1C1D;
+  /* position: absolute; */
 }
 .services .container .containers .box a span{
   font-size: 15px;
@@ -665,6 +669,9 @@ padding: 2rem 0;
   .home .about-us .container{
     flex-direction: column;
   }
+  .home .about-us {
+    padding-top: 0rem;
+}
   .companies{
     grid-template-columns: auto auto auto auto;
    }
