@@ -26,8 +26,6 @@ function openTab(tabName) {
     for (i = 0; i < tabButtons.length; i++) {
         tabButtons[i].classList.remove("active");
     }
-
-    // Add active class to the corresponding tab button
     document.querySelector(".tab-button[data-tab='" + tabName + "']").classList.add("active");
 }
 
@@ -41,24 +39,14 @@ function openTab(tabName) {
 
 
 var modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on the button, open the modal
-btn.onclick = function() {
+function openmodal(){
   modal.style.display = "block";
+  sideNav.style.display = "none";
 }
-
-// When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
 }
-
-// When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";

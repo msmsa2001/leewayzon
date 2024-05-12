@@ -29,6 +29,21 @@
 </head>
 
 <body>
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <form>
+        <input type="number" placeholder="Enter Number *">
+        <input type="email" placeholder="Enter your Email *">
+        <textarea name="" id="" placeholder="message"></textarea>
+        <div class="button">
+          <button class="close" style="background: gray;">Cancel</button>
+          <button class="close">submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- Modal -->
     <!-- navbar Start -->
     <div class="navbar">
       <div class="logo">
@@ -54,9 +69,8 @@
             <i class="fa-solid fa-bars" onclick="sidebar()" id="sidebar"></i>
           </ul>
         </div>
-        <div class="button">
-          <a href=""><button>Contact us<i class="fa-solid fa-arrow-up"
-                style=" transform: rotate(45deg); margin-left: 0.6rem; font-size: 12.8px;"></i></button></a>
+        <div class="button"><button onclick="openmodal()">Contact us<i class="fa-solid fa-arrow-up"
+                style=" transform: rotate(45deg); margin-left: 0.6rem; font-size: 12.8px;"></i></button>
         </div>
       </div>
       <div class="side-bar" id="side-bar">
@@ -66,8 +80,8 @@
           <li class="side-service"><a href="index.html#services">Services</a></li>
           <li><a href="index.html#training">Training</a></li>
           <div class="button">
-            <a href=""><button>Contact us<i class="fa-solid fa-arrow-up"
-                  style=" transform: rotate(45deg); margin-left: 0.6rem; font-size: 12.8px;"></i></button></a>
+          <button onclick="openmodal()">Contact us<i class="fa-solid fa-arrow-up"
+                  style=" transform: rotate(45deg); margin-left: 0.6rem; font-size: 12.8px;"></i></button>
           </div>
         </ul>
       </div>
