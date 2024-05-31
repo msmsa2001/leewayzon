@@ -972,8 +972,8 @@ footer .footer .col3,footer .footer .col2 {
   padding: 2rem 0;
 }
 .cards{
-  width: 460px;
-  height: 500px;
+  width: 490px;
+  height: 510px;
   border-radius: 20px;
   overflow: hidden;
   border: 8px solid #fff;
@@ -989,11 +989,11 @@ footer .footer .col3,footer .footer .col2 {
   width: 100%;
   height: 100%;
   left: 0;
-  bottom: -100%;
+  bottom: -80%;
   position: absolute;
-  background-color: #00000022;
-  backdrop-filter: blur(6px);
-  border-radius: 15px;
+  background-color: #00000043;
+  backdrop-filter: blur(8px);
+  /* border-radius: 15px; */
   color: #fff !important;
   padding: 26px !important;
   display: flex;
@@ -1013,6 +1013,9 @@ footer .footer .col3,footer .footer .col2 {
   text-decoration: underline;
   text-underline-offset:5px;
 }
+#card-title{
+  margin-top: -3rem;
+}
 .card-para{
   font-size: 14px;
   line-height: 22px;
@@ -1022,19 +1025,20 @@ footer .footer .col3,footer .footer .col2 {
 .cards:hover .card-body{
   bottom: 0;
 }
-
+.cards:hover .card-title{
+margin-top: 0
+}
+.cards:hover #subTitle{
+  margin-bottom: 18px;
+}
 @media screen and (max-width:1000px) {
-.cards{
-  width: 400px;
-}}
-@media screen and (max-width:900px) {
   .team{
     flex-direction: column;
     gap: 1rem;
   }}
 @media screen and (max-width:650px) {
   .card-title{
-    font-size: 24px;
+    font-size: 22px;
   }
   .card-subTitle{
     font-size: 12px;
@@ -1046,18 +1050,31 @@ footer .footer .col3,footer .footer .col2 {
     object-fit: cover;
   }
 }
-@media screen and (max-width:440px) {
+@media screen and (max-width:520px) {
   .cards {
-    width: 350px;
+    width: 400px;
     height: 531px;
 }
+#card-title{
+  margin-top: -4.3rem;
 }
-@media screen and (max-width:390px) {
+.card-body{
+  bottom: -86%;
+}
+}
+@media screen and (max-width:425px) {
   .cards {
     width: 320px;
-    height: 520px;
+    height: 580px;
 }
 .card-body{
   padding: 13px !important;
+  bottom: -83%;
+}
+#card-title{
+  margin-top: -3.4rem;
+}
+.card-para{
+  font-size: 12px;
 }
 }
