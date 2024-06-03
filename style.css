@@ -43,9 +43,52 @@
 .service:hover .drop-menu {
   display: block !important;
 }
-.service:hover #dropdown{
+#about:hover .about-us-nav, #training:hover .training-nav{
+  display: block !important;
+}
+li:hover i{
   transform: rotateX(180deg); 
 transition: transform 0.5s ease;
+}
+.nav-modal .head{
+  padding-top: 3rem;
+}
+.nav-modal{
+  display: grid;
+  grid-template-columns: 25% 65%;
+  gap: 2rem;
+  padding: 3rem 3rem;
+  position: absolute;
+  background: #f5fafe;
+  width: 100%;
+  top: 2.5rem;
+  left: 0;
+}
+.nav-modal .container{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 2rem 3rem;
+}
+.nav-modal .container .box{
+  transition: .4s;
+
+}
+.nav-modal .container .box:hover{
+  transform: scale(1.02);
+}
+.about-us-nav,.training-nav{
+  display: none;
+  width: 100%;
+}
+
+.nav-modal .container .box{
+  display: flex;
+  gap: 0.6rem;
+ cursor: pointer;
+  border-radius: 0.3rem;
+  box-shadow: 0 1px 1px 1px #b8ebf954;
+  padding: 0.6rem;
+  background: #ffffff;
 }
 .side-menu{
   display: none;
@@ -107,6 +150,9 @@ transition: transform 0.5s ease;
   }
   .navbar .navs ul li,
   .navbar .button {
+    display: none;
+  }
+  .about-us-nav,.training-nav{
     display: none;
   }
 }
@@ -841,10 +887,11 @@ padding: 2rem 0;
 .button{
   display: flex;
   gap: 0.6rem ;
+  z-index: 2;
 }
 .menu img{
-  /* border-radius: 50%; */
   width: 2.6rem;
+  cursor: pointer;
 }
 .menu ul{
   position: absolute;
