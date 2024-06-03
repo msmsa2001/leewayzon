@@ -52,3 +52,59 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+
+
+let calScrollValue = () => {
+  let scrollProgress = document.getElementById('progress');
+  let pos = document.documentElement.scrollTop;
+  let calHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  let scrollValue = Math.round((pos * 100) / calHeight);
+
+  if (pos > 100) {
+      scrollProgress.style.display = 'grid';
+  } else {
+      scrollProgress.style.display = 'none';
+  }
+
+  scrollProgress.style.background = `conic-gradient(#194eb9 ${scrollValue}%, #67ccff ${scrollValue}%)`;
+};
+
+let PercentageValue = () => {
+  let scrollProgress = document.getElementById('progressbar');
+  let pos = document.documentElement.scrollTop;
+  let calHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  let scroll = Math.round((pos * 100) / calHeight);
+  let progressValue = document.querySelector('.progressValue');
+
+  if (pos > 100) {
+      scrollProgress.style.display = 'grid';
+  } else {
+      scrollProgress.style.display = 'none';
+  }
+
+  progressValue.textContent = `${scroll}%`;
+  scrollProgress.style.background = `conic-gradient(#194eb9 ${scroll}%, #67ccff ${scroll}%)`;
+};
+
+let combinedScrollHandler = () => {
+  calScrollValue();
+  PercentageValue();
+};
+
+window.onscroll = combinedScrollHandler;
+window.onload = combinedScrollHandler;
+
+document.getElementById('progress').addEventListener('click', () => {
+  document.documentElement.scrollTop = 0;
+});
+ 
+
+function country(){
+  const menuList = document.getElementById('menuList');
+  if (menuList.style.display === 'none' || menuList.style.display === '') {
+      menuList.style.display = 'block';
+  } else {
+      menuList.style.display = 'none';
+  }
+}
