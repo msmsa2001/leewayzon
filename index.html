@@ -147,42 +147,25 @@
     </div>
   <!-- About us end-->
   <!-- Companies-->
-    <div class="companies">
-      <div class="img" id="img1">
-        <img src="assets/company/c1.webp" alt="">
-      </div>
-      <div class="img">
-        <img src="assets/company/c2.png" alt="">
-      </div>
-      <div class="img">
-        <img src="assets/company/c3.png" alt="">
-      </div>
-      <div class="img">
-        <img src="assets/company/c4.png" alt="">
-      </div>
-      <div class="img" id="img1">
-        <img src="assets/company/c5.png" alt="">
-      </div>
-      <div class="img">
-        <img src="assets/company/c6.png" alt="">
-      </div>
-      <div class="img">
-        <img src="assets/company/c7.png" alt="">
-      </div>
-      <div class="img">
-        <img src="assets/company/c8.png" alt="">
-      </div>
-      <div class="img" >
-        <img src="assets/company/c9.png" alt="">
-      </div>
-      <div class="img">
-        <img src="assets/company/c14.png" alt="">
-      </div>
-      <div class="img">
-        <img src="assets/company/c13.png" alt="">
-      </div>
-      <div class="img">
-        <img src="assets/company/c12.png" alt="">
+    <div class="logos">
+      <div class="logos-slide">
+        <img src="assets/company/logo1.jpeg" />
+        <img src="assets/company/logo2.jpeg" />
+        <img src="assets/company/logo4.jpeg" />
+        <img src="assets/company/logo5.jpg" />
+        <img src="assets/company/logo6.png" />
+        <img src="assets/company/logo7.png" />
+        <img src="assets/company/logo14.png" />
+        <img src="assets/company/logo9.png" />
+        <img src="assets/company/logo10.png" />
+        <img src="assets/company/logo11.jpeg" />
+        <img src="assets/company/logo12.png" />
+        <img src="assets/company/logo13.png" />
+        <img src="assets/company/logo15.png" />
+        <img src="assets/company/logo16.png" />
+        <img src="assets/company/logo17.png" />
+        <img src="assets/company/logo18.png" />
+        <img src="assets/company/logo19.webp" />
       </div>
     </div>
   <!-- Services start-->
@@ -661,6 +644,11 @@
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
+
+   <script>
+      var copy = document.querySelector(".logos-slide").cloneNode(true);
+      document.querySelector(".logos").appendChild(copy);
+    </script>  
 </body>
 
 </html>
