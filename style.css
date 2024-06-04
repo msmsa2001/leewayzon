@@ -169,11 +169,11 @@ transition: transform 0.5s ease;
 }
 .hero {
   /* background-image: url("assets/home/hero.svg"); */
-  background-image: url("assets/home/home.png");
-  background-size: cover;
+  /* background-image: url("assets/home/home.png"); */
+  /* background-size: cover; */
   height: 100%;
-  background-position:center;
-  background-repeat: no-repeat;
+  /* background-position:center; */
+  /* background-repeat: no-repeat; */
   gap: 1.2rem;
   padding-right: 7rem !important;
 }
@@ -893,29 +893,47 @@ padding: 2rem 0;
   width: 2.6rem;
   cursor: pointer;
 }
-.menu ul{
+#menuList{
+ 
   position: absolute;
-  width: 20rem;
+   
+   right: 0px;
+   background:#f5fafe;
+   animation: 35s logo infinite linear;
+   height: 100vh;
+   width: 20rem;
   text-align: center;
-  background:#f5fafe;
-  right: 0px;
-  height: 100vh;
-  padding: 2rem;
-  transition: height 0.3s ease-in-out, opacity 0.3s ease-in-out;
- display: none;
+  display: none;
  overflow-y: auto;
 }
-.menu ul li{
+
+@keyframes logo {
+
+   0%   { right:-50px; top: 4.66rem;;}
+  100% { right:0px; top: 4.66rem;;}
+}
+#menuList li{
   list-style: none;
   display: flex;
   align-items: center;
- padding: 0.7rem 0;
+ padding: 0.3rem 0;
   gap: 1rem;
   font-size: 18px;
   font-size: 15px;
   font-weight: 600;
+  transition: .5s;
+  cursor: pointer;
 }
-.menu ul li span{
+#menuList li:hover{
+  background: #f3f4f5;
+  width: 84%;
+  padding: 0.3rem 0.9rem;
+  border-radius: 2rem;
+}
+#menuList li:hover span{
+  background: #f5fafe;
+}
+#menuList li span{
   background: #f3f4f5;
   padding: 0.3rem 0.8rem;
   border-radius: 50%;

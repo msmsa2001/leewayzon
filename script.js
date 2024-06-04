@@ -102,9 +102,10 @@ document.getElementById('progress').addEventListener('click', () => {
 
 function country(){
   const menuList = document.getElementById('menuList');
-  if (menuList.style.display === 'none' || menuList.style.display === '') {
-      menuList.style.display = 'block';
-  } else {
-      menuList.style.display = 'none';
+  menuList.style.display = menuList.style.display === "none" ? "block" : "none";
+}
+window.onclick = function(event) {
+  if (event.target == menuList) {
+    menuList.style.display = "none";
   }
 }
