@@ -618,7 +618,9 @@ width: 100%;
   padding: 0;
   margin-bottom: 0;
 }
-
+.home-img{
+  opacity: 0;
+}
 @media screen and (max-width:1050px) {
   .google-text, .home .about-us{
     flex-direction: column;
