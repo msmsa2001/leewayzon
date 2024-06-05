@@ -64,7 +64,7 @@ let calScrollValue = () => {
   if (pos > 100) {
       scrollProgress.style.display = 'grid';
   } else {
-      scrollProgress.style.display = 'none';
+      scrollProgress.style.display = 'grid';
   }
 
   scrollProgress.style.background = `conic-gradient(#194eb9 ${scrollValue}%, #67ccff ${scrollValue}%)`;
@@ -80,7 +80,7 @@ let PercentageValue = () => {
   if (pos > 100) {
       scrollProgress.style.display = 'grid';
   } else {
-      scrollProgress.style.display = 'none';
+      scrollProgress.style.display = 'grid';
   }
 
   progressValue.textContent = `${scroll}%`;
