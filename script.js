@@ -100,9 +100,12 @@ document.getElementById('progress').addEventListener('click', () => {
 });
  
 
+const menuList = document.getElementById('menuList');
 function country(){
-  const menuList = document.getElementById('menuList');
   menuList.style.display = menuList.style.display === "none" ? "block" : "none";
+}
+function global(){
+  menuList.style.display="none";
 }
 window.onclick = function(event) {
   if (event.target == menuList) {

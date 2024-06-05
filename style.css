@@ -40,10 +40,7 @@
   padding: 0.5rem !important;
 }
 
-.service:hover .drop-menu {
-  display: block !important;
-}
-#about:hover .about-us-nav, #training:hover .training-nav{
+#about:hover .about-us-nav, #training:hover .training-nav, .service:hover .drop-menu{
   display: block !important;
 }
 li:hover i{
@@ -63,6 +60,7 @@ transition: transform 0.5s ease;
   width: 100%;
   top: 2.5rem;
   left: 0;
+  box-shadow: 0px 25px 20px -20px rgba(0,0,0,0.45);
 }
 .nav-modal .container{
   display: grid;
@@ -891,14 +889,24 @@ padding: 2rem 0;
   gap: 0.6rem ;
   z-index: 2;
 }
+.globe{
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  width: 80%;
+  border-bottom: 1px solid #d5d0d0;
+}
+.globe span{
+  font-size: 2rem;
+  font-weight: 600;
+
+}
 .menu img{
   width: 2.6rem;
   cursor: pointer;
 }
 #menuList{
- 
-  position: absolute;
-   
+  position: absolute;  
    right: 0px;
    background:#f5fafe;
    animation: 35s logo infinite linear;
@@ -906,11 +914,10 @@ padding: 2rem 0;
    width: 20rem;
   text-align: center;
   display: none;
- overflow-y: auto;
+  overflow-y: auto;
 }
 
 @keyframes logo {
-
    0%   { right:-50px; top: 4.66rem;;}
   100% { right:0px; top: 4.66rem;;}
 }
@@ -940,7 +947,9 @@ padding: 2rem 0;
   padding: 0.3rem 0.8rem;
   border-radius: 50%;
   }
-
+#global{
+  cursor: pointer;
+}
 
 @keyframes slide {
   from {
