@@ -123,26 +123,21 @@
 
     <div class="container1">
       <video autoplay muted loop id="bg-video">
-          <source src="assets/videoplayback.mp4" type="video/mp4">
-          Your browser does not support the video tag.
+        <source src="assets/videoplayback.mp4" type="video/mp4">
+        Your browser does not support the video tag.
       </video>
       <div class="upper-text">
-        <h2>Whether you need 2, 20, or 2000 people, we've got you covered.</h2>
+        <div class="text-area">
+          <!-- <span>Whether</span><span> you</span><span> need </span><span>2,</span><span> 20,</span><span> or</span><span> 2000</span><span> people,</span><span> we've</span><span> got</span><span> you </span>
+          <span class="auto-type"></span> -->
+          Whether you need 2, 20 or 200, we've got you <span class="auto-type"></span>
+        </div>
         <div class="google-text">
-          <p>We bring your ideas to life, working with the best talent and partners to deliver excellence.
-            It's time for something better.</p>
-          <!-- <div class="google">
-            <img src="assets/home/google.svg">
-            <div class="star">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-
-            </div>
-            <span>4.9</span>
-          </div> -->
+          <p>We bring your ideas to life, working with the best talent and partners to deliver excellence. It's time for something better.</p>
         </div>
       </div>
-  </div>
+    </div>
+    
 
 
   <!-- About us start-->
@@ -672,7 +667,18 @@
    <script>
       var copy = document.querySelector(".logos-slide").cloneNode(true);
       document.querySelector(".logos").appendChild(copy);
-    </script>  
+    </script> 
+    
+    <!-- cdn for autotext -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>    <script>
+      var typed = new Typed('.auto-type', {
+        strings: ['covered'],
+        typeSpeed: 150,
+        backSpeed: 150, // Adjust backSpeed if necessary
+        loop: true,
+      });
+    </script>
+    
 </body>
 
 </html>
