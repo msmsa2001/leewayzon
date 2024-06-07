@@ -1006,7 +1006,7 @@ padding: 2rem 0;
 
 #progress{
   position: fixed;
-  z-index: 10000;
+  z-index: 100;
   bottom: 50px;
   right: 10px;
   display: none;
@@ -1031,7 +1031,7 @@ padding: 2rem 0;
 }
 #progressbar{
   position: fixed;
-  z-index: 10000;
+  z-index: 100;
   top: 5rem;
   right: 10px;
   width: 60px;
@@ -1083,6 +1083,7 @@ padding: 2rem 0;
   text-align: center;
   display: none;
   overflow-y: auto;
+  z-index:102 ;
 }
 
 @keyframes logo {
