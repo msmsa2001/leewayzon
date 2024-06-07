@@ -422,7 +422,7 @@ transform: skewX(-35deg);
   height: 100%;
   object-fit: cover;
 }
-.content{
+#bg-video .content{
   z-index: 1;
   padding: 6rem;
 
@@ -621,10 +621,61 @@ transition: transform 0.5s ease;
   gap: 1rem;
   margin: 1rem auto 1.6rem auto;
 }
+.training .header h2{
+  text-align: left;
+}
 .training .container .box{
   background: #ECECF2;
   padding: 0.9rem 1.5rem;
-  border-radius: 6px;
+  border-radius: 3px;
+  transition: all .3s ease;
+  cursor: pointer;
+}
+/* .training .container #box1:hover{
+  background-color: #2db6fa;
+  color: #fff;
+}
+.training .container #box2:hover{
+  background-color: #e9222c;
+  color: #fff;
+}
+.training .container #box3:hover{
+  background-color: #f68c09;
+  color: #fff;
+}
+.training .container #box4:hover{
+  background-color: #08da4e;
+  color: #fff;
+}
+.training .container #box5:hover{
+  background-color: #b50edf;
+  color: #fff;
+}
+.training .container #box6:hover{
+  background-color: #f51f9c;
+  color: #fff;
+}
+.training .container #box7:hover{
+  background-color: #08da4e;
+  color: #fff;
+}
+.training .container #box8:hover{
+  background-color: #08da4e;
+  color: #fff;
+} */
+
+
+
+
+
+.training .container .box:hover{
+  background-color: #f0f3fd;
+  transform: scale(1.01);
+  /* color: #fff; */
+}
+.training .container .box:hover h6,.training .container .box:hover p{
+  color: #09090D;
+  /* color: #fff; */
 }
 .training .container .box h6,.training .container .box p{
   font-size: 13.5px;
