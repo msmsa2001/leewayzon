@@ -572,7 +572,7 @@ transform: skewX(-35deg);
 .services .container .containers .box{
   text-align: center;
   box-shadow:0px 0px 10px 0 rgba(0, 0, 0, 0.1);
-  border-radius: 24px;
+  border-radius: 3px;
   padding: 0.7rem 1.3rem 0.1rem 1.3rem;
   line-height: 4rem;
   /* position: relative; */
