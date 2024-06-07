@@ -167,14 +167,13 @@ transition: transform 0.5s ease;
 
 }
 .hero {
-<<<<<<< HEAD
+
   background-image: url("assets/home/home.png");
   background-size: cover;
-=======
+
   /* background-image: url("assets/home/hero.svg"); */
   /* background-image: url("assets/home/home.png"); */
   /* background-size: cover; */
->>>>>>> a026d5a6d583794a0dfa1ba43ee1f7ed909fe898
   height: 100%;
   /* background-position:center; */
   /* background-repeat: no-repeat; */
