@@ -112,3 +112,65 @@ window.onclick = function(event) {
     menuList.style.display = "none";
   }
 }
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const navItems = document.querySelectorAll('.nav1 ul li');
+  const subMenus = document.querySelectorAll('.services_nav ul');
+
+  let currentSubMenu = null;
+
+  navItems.forEach(navItem => {
+    navItem.addEventListener('mouseover', () => showSubMenu(navItem));
+    navItem.addEventListener('focus', () => showSubMenu(navItem), true);
+    navItem.addEventListener('click', (event) => {
+      event.preventDefault(); // Prevent the default link behavior
+      showSubMenu(navItem);
+    });
+  });
+
+  subMenus.forEach(subMenu => {
+    subMenu.addEventListener('mouseover', () => keepSubMenuVisible(subMenu));
+    subMenu.addEventListener('mouseout', (event) => {
+      if (!event.relatedTarget || !event.relatedTarget.closest('.services_nav ul') && !event.relatedTarget.closest('.nav1 ul li')) {
+        subMenu.classList.remove('active');
+      }
+    });
+    subMenu.addEventListener('click', () => keepSubMenuVisible(subMenu));
+  });
+
+  function showSubMenu(navItem) {
+    hideAllSubMenus();
+    if (navItem.id === 'service_nav1') {
+      document.querySelector('.service_nav1').classList.add('active');
+      currentSubMenu = document.querySelector('.service_nav1');
+    } else if (navItem.id === 'service_nav2') {
+      document.querySelector('.service_nav2').classList.add('active');
+      currentSubMenu = document.querySelector('.service_nav2');
+    } else if (navItem.id === 'service_nav3') {
+      document.querySelector('.service_nav3').classList.add('active');
+      currentSubMenu = document.querySelector('.service_nav3');
+    }
+  }
+
+  function hideAllSubMenus() {
+    subMenus.forEach(subMenu => {
+      subMenu.classList.remove('active');
+    });
+    currentSubMenu = null;
+  }
+
+  function keepSubMenuVisible(subMenu) {
+    hideAllSubMenus();
+    subMenu.classList.add('active');
+    currentSubMenu = subMenu;
+  }
+
+  document.querySelector('.nav1').addEventListener('mouseleave', (event) => {
+    if (!event.relatedTarget || !event.relatedTarget.closest('.services_nav ul')) {
+      hideAllSubMenus();
+    }
+  });
+});
+
+
