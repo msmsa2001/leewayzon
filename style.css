@@ -41,8 +41,21 @@
 .drop-menu li {
   padding: 0.5rem !important;
 }
-
-#about:hover .about-us-nav, #training:hover .training-nav, .service:hover .drop-menu,#what_we_do:hover .what_we_do, #industy:hover .industy, #work:hover .work, #insight:hover .insight{
+.navs ul li a{
+  position: relative;
+}
+.navs ul li a:hover::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px; 
+  width: 6rem;
+  background-color: #000;
+  transition: 5s;
+}
+#about:hover .about-us-nav, #training:hover .training-nav, .service:hover .drop-menu,#what_we_do:hover .what_we_do, #industy:hover .industy, #work:hover .work, #insight:hover .insight, #Services:hover #nav-service{
   display: block !important;
 }
 li:hover i{
@@ -113,11 +126,30 @@ padding-right: 5rem;
 .nav-modal .nav2 div p{
   font-size: 14px;
 }
- .about-us-nav,.what_we_do,.industy, .work,.insight{
+ .about-us-nav,.what_we_do,.industy, .work,.insight,#who,#nav-service{
   width: 100%;
   display: none;
-
  }
+#who{
+  text-align: left;
+
+}
+#who li a{
+  font-size: 15px;
+  font-weight: 500 !important;
+  color: #636060 !important;
+}
+.chevron-icon {
+  transition: transform 0.3s;
+}
+
+.chevron-icon.up {
+  transform: rotate(180deg);
+}
+
+.chevron-icon.down {
+  transform: rotate(0deg);
+}
 .training-nav{ 
   display: none; 
   width: 100%;
@@ -182,16 +214,24 @@ padding-right: 5rem;
   position: fixed;
   right: 0;
   height: 100vh;
-  top: 3rem;
-  width: 15rem;
+  top: 3.5rem;
+  width: 100%;
   z-index: 1111;
   background: #F5FAFE;
+  overflow-y: auto;
+  text-align: left;
 }
-.side-bar {
-  text-align: center;
+.side-bar ul li div{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
 }
 .side-bar ul li {
   margin: 1rem;
+}
+.side-bar ul li a{
+  font-weight: 600 !important;
+  font-size: 15px;
 }
 .navbar .navs ul li i,
 .side-bar ul li i {
@@ -200,6 +240,11 @@ padding-right: 5rem;
 #sidebar {
   display: none;
   font-size: 24px;
+}
+@media screen and (min-width:761px) {
+  .side-bar{
+    display: none !important;
+  }
 }
 @media screen and (max-width:761px) {
   #sidebar {
@@ -1166,6 +1211,7 @@ padding: 2rem 0;
   display: flex;
   gap: 0.6rem ;
   z-index: 2;
+  align-items: center;
 }
 .globe{
   display: flex;

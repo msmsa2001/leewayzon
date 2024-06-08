@@ -8,8 +8,17 @@ document.querySelectorAll(".side-bar a").forEach(link => {
         document.getElementById("side-bar").style.display = "none";
     });
 });
-
-
+function toggleMenu(chevron, menu) {
+  if (menu.style.display === "none" || menu.style.display === "") {
+    menu.style.display = "block";
+    chevron.classList.add("up");
+    chevron.classList.remove("down");
+  } else {
+    menu.style.display = "none";
+    chevron.classList.add("down");
+    chevron.classList.remove("up");
+  }
+}
 
 
 
