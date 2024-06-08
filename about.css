@@ -307,7 +307,7 @@ nav input{
         display: block;
         object-fit: cover;
         object-position: center;
-        height: 500px;
+        height: 100%;
       }
       .container1 .attached-text{
         position: absolute;
@@ -590,9 +590,9 @@ nav input{
           --paraSize: 12px;
 
         }
-      .container1 img{
+      /* .container1 img{
         height: 550px;
-      }
+      } */
 .container1 .attached-text .hero-title {
   line-height: 35px;
 }

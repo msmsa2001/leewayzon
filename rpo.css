@@ -307,7 +307,7 @@ nav input{
         display: block;
         object-fit: cover;
         object-position: center;
-        height: 550px;
+        height: 100%;
       }
       .container1 .attached-text{
         position: absolute;
@@ -618,9 +618,9 @@ nav input{
           --paraSize: 12px;
 
         }
-      .container1 img{
+      /* .container1 img{
         height: 500px;
-      }
+      } */
       .container2 .sec-1 .para,.container5 .sec-2 .para {
         line-height: 22px;
     }
@@ -687,9 +687,9 @@ nav input{
 #strategy_img{
   width: 260px;
 }
-.container1 img {
+/* .container1 img {
   height: 580px;
-}
+} */
 .container2 {
   padding: var(--padding) 2rem;
 }
@@ -703,9 +703,9 @@ nav input{
   --titleSize: 18px;
   --paraSize: 10px;
 }
-.container1 img {
+/* .container1 img {
   height: 500px;
-}
+} */
 .container2 .sec-1 p,.container3 .sec-2 p {
   line-height: 18px;
 }

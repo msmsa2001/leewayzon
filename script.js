@@ -1,13 +1,39 @@
-var sideNav = document.getElementById("side-bar");
-sideNav.style.display = "none";
+// var sideNav = document.getElementById("side-bar");
+// sideNav.style.display = "none";
+// function sidebar() {
+//     sideNav.style.display = sideNav.style.display === "none" ? "block" : "none";
+// }
+// document.querySelectorAll(".side-bar a").forEach(link => {
+//     link.addEventListener("click", () => {
+//         document.getElementById("side-bar").style.display = "none";
+//     });
+// });
 function sidebar() {
-    sideNav.style.display = sideNav.style.display === "none" ? "block" : "none";
+  var sideNav = document.getElementById("side-bar");
+  var icon = document.getElementById("sidebar");
+  
+  if (sideNav.style.display === "none" || sideNav.style.display === "") {
+      sideNav.style.display = "block";
+      icon.classList.remove("fa-bars");
+      icon.classList.add("fa-times");
+  } else {
+      sideNav.style.display = "none";
+      icon.classList.remove("fa-times");
+      icon.classList.add("fa-bars");
+  }
 }
+
 document.querySelectorAll(".side-bar a").forEach(link => {
-    link.addEventListener("click", () => {
-        document.getElementById("side-bar").style.display = "none";
-    });
+  link.addEventListener("click", () => {
+      document.getElementById("side-bar").style.display = "none";
+      var icon = document.getElementById("sidebar");
+      icon.classList.remove("fa-times");
+      icon.classList.add("fa-bars");
+  });
 });
+function side_close(){
+  sideNav.style.display="none";
+}
 function toggleMenu(chevron, menu) {
   if (menu.style.display === "none" || menu.style.display === "") {
     menu.style.display = "block";

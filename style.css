@@ -12,6 +12,8 @@
   z-index: 111;
   position: fixed;
   width: 100%;
+  box-shadow: 0px 25px 25px -20px rgba(0,0,0,0.20);
+
 }
 .navbar,
 .navbar .navs ul,
@@ -29,7 +31,7 @@
 .navbar .navs ul li,
 .side-bar ul li {
   /* margin-right: var(--list-margin-right); */
-  margin-right: 0.5rem;
+  margin-right: 0.88rem;
   list-style: none;
 }
 .drop-menu {
@@ -44,16 +46,16 @@
 .navs ul li a{
   position: relative;
 }
-.navs ul li a:hover::after{
+.navs ul li:hover a::after{
   content: '';
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
   height: 2px; 
-  width: 6rem;
+  width: 100%;
   background-color: #000;
-  transition: 5s;
+  transition: 15s;
 }
 #about:hover .about-us-nav, #training:hover .training-nav, .service:hover .drop-menu,#what_we_do:hover .what_we_do, #industy:hover .industy, #work:hover .work, #insight:hover .insight, #Services:hover #nav-service{
   display: block !important;
@@ -134,7 +136,7 @@ padding-right: 5rem;
   text-align: left;
 
 }
-#who li a{
+#who li a, #what_we li a,#industry li a,#Insights li a,#services li a{
   font-size: 15px;
   font-weight: 500 !important;
   color: #636060 !important;
@@ -241,12 +243,23 @@ padding-right: 5rem;
   display: none;
   font-size: 24px;
 }
-@media screen and (min-width:761px) {
+@media screen and (max-width:1170px) {
+  .navbar{
+    padding: 1rem !important;
+  }
+  .navbar .navs ul li{
+    margin-right: 0.4rem !important;
+  }
+}
+@media screen and (min-width:1071px) {
   .side-bar{
     display: none !important;
   }
 }
-@media screen and (max-width:761px) {
+@media screen and (max-width:1070px) {
+  .side-bar{
+    display: none ;
+  }
   #sidebar {
     display: block;
   }
@@ -254,6 +267,18 @@ padding-right: 5rem;
   .navbar .button {
     display: none;
   }
+}
+@media screen and (max-width:761px) {
+  /* .side-bar{
+    display: none ;
+  }
+  #sidebar {
+    display: block;
+  }
+  .navbar .navs ul li,
+  .navbar .button {
+    display: none;
+  } */
   .about-us-nav,.training-nav{
     display: none;
   }
@@ -734,46 +759,45 @@ transition: transform 0.5s ease;
   transition: all .6s ease;
   /* cursor: pointer; */
 }
-/* .training .container #box1:hover{
-  background-color: #2db6fa;
+.training .container #box1:hover{
+  background-color: #a0bff0;
   color: #fff;
 }
 .training .container #box2:hover{
-  background-color: #e9222c;
+  background-color: #fc8983;
   color: #fff;
 }
 .training .container #box3:hover{
-  background-color: #f68c09;
+  background-color: #e5bd84;
   color: #fff;
 }
 .training .container #box4:hover{
-  background-color: #08da4e;
+  background-color: #83ca89;
   color: #fff;
 }
 .training .container #box5:hover{
-  background-color: #b50edf;
+  background-color: #caa9d3;
   color: #fff;
 }
 .training .container #box6:hover{
-  background-color: #f51f9c;
+  background-color: #fdb0c0;
   color: #fff;
 }
 .training .container #box7:hover{
-  background-color: #08da4e;
+  background-color: #e7a3e4;
   color: #fff;
 }
 .training .container #box8:hover{
-  background-color: #08da4e;
+  background-color: #9f7474;
   color: #fff;
-} */
-
+}
 
 
 
 
 .training .container .box:hover{
   /* background-color: #0c2d3e; */
-  background-color: rgba(12, 45,62, 0.6);
+  /* background-color: rgba(12, 45,62, 0.6); */
   transform: scale(1.01);
   /* color: #fff; */
 }
