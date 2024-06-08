@@ -35,9 +35,9 @@ function toggleMenu(chevron, menu) {
 }
 document.querySelectorAll('.navs a').forEach(anchor => {
   anchor.addEventListener('click', function(event) {
-    event.preventDefault(); // Prevent default anchor behavior
-    let href = this.getAttribute('href'); // Get the href attribute value
-    window.location.href = href; // Redirect to the href value
+    event.preventDefault(); 
+    let href = this.getAttribute('href'); 
+    window.location.href = href; 
   });
 });
 
