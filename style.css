@@ -689,45 +689,45 @@ transition: transform 0.5s ease;
   transition: all .6s ease;
   /* cursor: pointer; */
 }
-/* .training .container #box1:hover{
-  background-color: #2db6fa;
+.training .container #box1:hover{
+  background-color: #a0bff0;
   color: #fff;
 }
 .training .container #box2:hover{
-  background-color: #e9222c;
+  background-color: #fc8983;
   color: #fff;
 }
 .training .container #box3:hover{
-  background-color: #f68c09;
+  background-color: #e5bd84;
   color: #fff;
 }
 .training .container #box4:hover{
-  background-color: #08da4e;
+  background-color: #83ca89;
   color: #fff;
 }
 .training .container #box5:hover{
-  background-color: #b50edf;
+  background-color: #caa9d3;
   color: #fff;
 }
 .training .container #box6:hover{
-  background-color: #f51f9c;
+  background-color: #fdb0c0;
   color: #fff;
 }
 .training .container #box7:hover{
-  background-color: #08da4e;
+  background-color: #e7a3e4;
   color: #fff;
 }
 .training .container #box8:hover{
-  background-color: #08da4e;
+  background-color: #9f7474;
   color: #fff;
-} */
+}
 
 
 
 
 .training .container .box:hover{
   /* background-color: #0c2d3e; */
-  background-color: rgba(12, 45,62, 0.6);
+  /* background-color: rgba(12, 45,62, 0.6); */
   transform: scale(1.01);
   /* color: #fff; */
 }
