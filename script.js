@@ -1,13 +1,3 @@
-// var sideNav = document.getElementById("side-bar");
-// sideNav.style.display = "none";
-// function sidebar() {
-//     sideNav.style.display = sideNav.style.display === "none" ? "block" : "none";
-// }
-// document.querySelectorAll(".side-bar a").forEach(link => {
-//     link.addEventListener("click", () => {
-//         document.getElementById("side-bar").style.display = "none";
-//     });
-// });
 function sidebar() {
   var sideNav = document.getElementById("side-bar");
   var icon = document.getElementById("sidebar");
@@ -31,9 +21,7 @@ document.querySelectorAll(".side-bar a").forEach(link => {
       icon.classList.add("fa-bars");
   });
 });
-function side_close(){
-  sideNav.style.display="none";
-}
+
 function toggleMenu(chevron, menu) {
   if (menu.style.display === "none" || menu.style.display === "") {
     menu.style.display = "block";
@@ -45,6 +33,13 @@ function toggleMenu(chevron, menu) {
     chevron.classList.remove("up");
   }
 }
+document.querySelectorAll('.navs a').forEach(anchor => {
+  anchor.addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent default anchor behavior
+    let href = this.getAttribute('href'); // Get the href attribute value
+    window.location.href = href; // Redirect to the href value
+  });
+});
 
 
 
