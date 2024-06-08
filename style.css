@@ -760,35 +760,35 @@ transition: transform 0.5s ease;
   /* cursor: pointer; */
 }
 .training .container #box1:hover{
-  background-color: #a0bff0;
+  background-color: #2d5fb0;
   color: #fff;
 }
 .training .container #box2:hover{
-  background-color: #fc8983;
+  background-color: #f74137;
   color: #fff;
 }
 .training .container #box3:hover{
-  background-color: #e5bd84;
+  background-color: #f7ab42;
   color: #fff;
 }
 .training .container #box4:hover{
-  background-color: #83ca89;
+  background-color: #63f570;
   color: #fff;
 }
 .training .container #box5:hover{
-  background-color: #caa9d3;
+  background-color: #c92ef4;
   color: #fff;
 }
 .training .container #box6:hover{
-  background-color: #fdb0c0;
+  background-color: #f85777;
   color: #fff;
 }
 .training .container #box7:hover{
-  background-color: #e7a3e4;
+  background-color: #f42fea;
   color: #fff;
 }
 .training .container #box8:hover{
-  background-color: #9f7474;
+  background-color: #f96565;
   color: #fff;
 }
 

@@ -33,12 +33,15 @@ function toggleMenu(chevron, menu) {
     chevron.classList.remove("up");
   }
 }
-document.querySelectorAll('.navs a').forEach(anchor => {
-  anchor.addEventListener('click', function(event) {
-    event.preventDefault(); 
-    let href = this.getAttribute('href'); 
-    window.location.href = href; 
-  });
+const navLinks = document.querySelectorAll('.navs a');
+navLinks.forEach(link => {
+    link.addEventListener('click', function(event) {
+        event.preventDefault();
+        const href = this.getAttribute('href');
+        if (href) {
+            window.location.href = href;
+        }
+    });
 });
 
 
