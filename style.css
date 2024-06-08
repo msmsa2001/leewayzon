@@ -60,9 +60,8 @@ transition: transform 0.5s ease;
   width: 100%;
   top: 2.5rem;
   left: 0;
-  box-shadow: 0px 25px 20px -20px rgba(0,0,0,0.45);
+  box-shadow: 0px 25px 25px -20px rgba(0,0,0,0.20);
   overflow-y: auto;
-  /* gap: 1rem; */
 }
 .nav-modal .nav1, .nav-modal .nav2{
   border-top: 1px solid #e4e3e3;
@@ -1191,7 +1190,7 @@ padding: 2rem 0;
    transition: 5s;
    top: 4rem;
    height: 100vh;
-   width: 17rem;
+   width: 16rem;
   text-align: center;
   display: none;
   overflow-y: auto; 
@@ -1213,8 +1212,8 @@ padding: 2rem 0;
   margin: 0.6rem 0;
 }
 #menuList li img,.menu img{
-  width: 2rem;
-  height: 2rem;
+  width: 1.5rem;
+  height: 1.5rem;
   border-radius: 50%;
 }
 #menuList li:hover{
