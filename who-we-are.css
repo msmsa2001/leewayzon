@@ -1,0 +1,88 @@
+@import url("global.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+:root{
+    --blue-color1:rgba(0, 168, 205, 1);
+    --blue-color2:rgba(3, 125, 152, 1);
+    --white-color:#FFFFFF01;
+    --white-color2:rgba(255, 255, 255, 1);
+    --grey-color1:rgba(248, 248, 248, 1);
+    --grey-color2:rgba(76, 76, 76, 1);
+    --padding:5rem;
+    --aboutSize:38px;
+    --titleSize:42px;
+    --paraSize:15px;
+    --herotitle:60px;
+    --heropara:16px;
+    --black-color1:rgba(0,0,0,1);
+    --black-color2:rgba(77, 76, 76, 1);
+    --black-color3:#4D4C4C;
+}
+
+.who-we-are1{
+    position: relative;
+    /* display: inline-block; */
+  }
+  .who-we-are1 img{
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+  }
+  .who-we-are1 .attached-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0rem 27rem 0 5rem;
+  }
+  .who-we-are1 .attached-text .hero-title{
+    color: var(--white-color2);
+    font-size: var(--herotitle);
+    line-height: 50px;
+    font-weight: 500;
+    line-height: 60px;
+  }
+  .who-we-are1 .attached-text .hero-para{
+    color: var(--white-color2);
+    font-size: var(--heropara);
+    line-height: 24px;
+    margin-top: 12px;
+    font-weight: 300;
+  }
+
+  /* second container */
+  .who-we-are2{
+    padding: 3rem 5.5rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 2rem;
+  }
+  .who-we-are2 .box1{
+    background: var(--white-color2);
+    box-shadow: 0 4px 40px 0 rgba(9, 36, 83, 0.08);
+     border-radius: 10px;
+     padding: 15px 2.8rem 14px 1.8rem;
+  }
+  .who-we-are2 .box1 .title{
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: .22px;
+    margin-bottom: 10px;
+  }
+  .who-we-are2 .box1 .content{
+    font-size: 13px;
+    line-height: 20px;
+    color: rgba(77, 77, 77, 1);
+  }
