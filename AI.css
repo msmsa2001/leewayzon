@@ -96,6 +96,19 @@ line-height: var(--h6-line-height);
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem 1.8rem;
 }
+.container-add1 .leader-ship{
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 6rem;
+  padding: 2rem 7rem;
+}
+.container-add1 .leader-ship img{
+    width: 100%;
+}
+.container-add1 .leader-ship .leader{
+box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+border-radius: 0.5rem;
+}
 .container-add .box2 .s-box, .container-add1 .container .s-box,.container-add3 .container .s-box{
 box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
 border-radius: 0.5rem;
@@ -111,15 +124,20 @@ background: #ffff;
     border-radius: 0.9rem;
     margin-bottom: 0.5rem;
 }
-.container-add .box2 .s-box h4, .container-add1 .container .s-box h4,.container-add3 .container .s-box h4,.core_values .core_box h4,.directors .container h4,.container-add2 .content button{
+.container-add .box2 .s-box h4, .container-add1 .container .s-box h4,.container-add3 .container .s-box h4,.core_values .core_box h4,.directors .container h4,.container-add2 .content button,.container-add1 .leader-ship .leader .para h4{
     font-size: var(--h4-size);
     line-height: var(--h6-line-height);
     font-weight: var(--h6-font-weight);
 }
-.container-add .box2 .s-box p, .container-add1 .container .s-box p, .points p,.container-add3 .container .s-box p,.core_values .core_box p, .directors .container p,#corporate .content h6{
+.container-add .box2 .s-box p, .container-add1 .container .s-box p, .points p,.container-add3 .container .s-box p,.core_values .core_box p, .directors .container p,#corporate .content h6,.container-add1 .leader-ship .leader .para p{
     font-size: var(--p-size);
     line-height: var(--p-height);
     font-weight: var(--h3-font-weight);
+}
+.container-add1 .leader-ship .leader .para span{
+    font-size: 14px;
+     color: gray;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .container-add .box2 .s-box .points, .container-add1 .container .s-box .points, .container-add2 .content .points, .points{
     display: flex;
@@ -160,7 +178,7 @@ background: #ffff;
     margin-left: 6rem;
     margin-right: -6rem;
 }
-#vision_points{
+#vision_points, .container-add1 .leader-ship .leader .para{
     padding: 1rem;
     border-radius: 0.6rem;
 }
@@ -243,12 +261,16 @@ background: #ffff;
     }
 }
 @media screen and (max-width:870px) {
-    .core_values{
+    .core_values,.container-add1 .leader-ship{
         padding: 3rem 3rem 2rem  3rem !important;
     }
     .directors .container, .core_values{
         grid-template-columns: auto auto ;
 
+    }
+    .container-add1 .leader-ship{
+        grid-template-columns: auto;
+        gap: 1rem;
     }
 }
 @media screen and (max-width:650px) {
@@ -272,7 +294,7 @@ background: #ffff;
     }
 }
 @media screen and (max-width:477px) {
-    .container-add, .container-add1, .container-add2,.container-add3,.vision{
+    .container-add, .container-add1, .container-add2,.container-add3,.vision, .container-add1 .leader-ship{
         padding: 0.1rem 1.6rem 0.1rem 1.6rem;
     }
 }
