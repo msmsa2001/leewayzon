@@ -17,7 +17,7 @@
 *{
     font-family: var(--h3-font-family);
 }
-.container-add, .container-add1, .container-add2{
+.container-add, .container-add1, .container-add2,.container-add3{
 
     padding: var(--nav-padding);
 padding-top: 3rem ;
@@ -43,13 +43,14 @@ line-height: var(--h6-line-height);
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem 1.8rem;
 }
-.container-add .box2 .s-box, .container-add1 .container .s-box{
+.container-add .box2 .s-box, .container-add1 .container .s-box,.container-add3 .container .s-box{
     box-shadow: 0px 4px 6px -4px rgba(0, 0, 0, 0.1);
 box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
 border-radius: 0.5rem;
 padding: 1.33rem;
+background: #ffff;
 }
-.container-add .box2 .s-box span, .container-add1 .container .s-box span{
+.container-add .box2 .s-box span, .container-add1 .container .s-box span,.container-add3 .container .s-box span{
     color: var(--icon-color);
     font-size: var(--icon-size);
     font-weight: 600;
@@ -57,23 +58,23 @@ padding: 1.33rem;
     padding: 0.9rem;
     border-radius: 0.9rem;
 }
-.container-add .box2 .s-box h4, .container-add1 .container .s-box h4{
+.container-add .box2 .s-box h4, .container-add1 .container .s-box h4,.container-add3 .container .s-box h4{
     font-size: var(--h4-size);
     line-height: var(--h6-line-height);
     font-weight: var(--h6-font-weight);
 }
-.container-add .box2 .s-box p, .container-add1 .container .s-box p, .points p{
+.container-add .box2 .s-box p, .container-add1 .container .s-box p, .points p,.container-add3 .container .s-box p{
     font-size: var(--p-size);
     line-height: var(--p-height);
     font-weight: var(--h3-font-weight);
 }
-.container-add .box2 .s-box .points, .container-add1 .container .s-box .points, .container-add2 .content .points{
+.container-add .box2 .s-box .points, .container-add1 .container .s-box .points, .container-add2 .content .points, .points{
     display: flex;
     align-items: start;
     gap: 0.6rem;
     padding: 0.2rem 0;
 }
-.container-add .box2 .s-box .points i, .container-add1 .container .s-box .points i, .container-add2 .content .points i{
+.points i{
     color: var(--icon-color);
     font-size:18px;
     background: #e7e9ef;
@@ -85,4 +86,47 @@ padding: 1.33rem;
 }
 .container-add2 .img img{
     width: 107%;
+}
+.container-add3 .container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1rem;
+    padding: 2rem 0;
+    /* background: #e7e9ef; */
+}
+.container-add3{
+    background: #e7e9ef;
+}
+@media screen and (max-width:990px) {
+    .container-add{
+        flex-direction: column;
+    }
+    .container-add3 .container{
+        grid-template-columns: auto auto ;
+    }
+}
+@media screen and (max-width:650px) {
+    :root{
+        --h3-font-size:38px;
+    }
+    .container-add .box2, .container-add1 .container, .container-add3 .container{
+        grid-template-columns: auto;
+        align-items: center;
+    }
+    .container-add2{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .container-add2 h6{
+        width: 100% !important;
+    }
+    .container-add2 .img img{
+        width: 100%;
+    }
+}
+@media screen and (max-width:477px) {
+    .container-add, .container-add1, .container-add2,.container-add3{
+        padding: 0.1rem 1.6rem 0.1rem 1.6rem;
+    }
 }
