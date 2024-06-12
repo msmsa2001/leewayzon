@@ -71,6 +71,12 @@ padding-bottom: 2rem;
     width: 100%;
     border-radius: 3px;
 }
+.directors .container .box-d p{
+    margin-bottom: 0;
+}
+.directors .container .box-d i{
+    font-size: 22px;
+}
 .container-add2{
     gap: 5rem !important;
 }
@@ -110,7 +116,7 @@ background: #ffff;
     line-height: var(--h6-line-height);
     font-weight: var(--h6-font-weight);
 }
-.container-add .box2 .s-box p, .container-add1 .container .s-box p, .points p,.container-add3 .container .s-box p,.core_values .core_box p, .directors .container p{
+.container-add .box2 .s-box p, .container-add1 .container .s-box p, .points p,.container-add3 .container .s-box p,.core_values .core_box p, .directors .container p,#corporate .content h6{
     font-size: var(--p-size);
     line-height: var(--p-height);
     font-weight: var(--h3-font-weight);
