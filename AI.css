@@ -38,8 +38,11 @@ padding-bottom: 2rem;
     transition: 2s;
 }
 .core_values .core_box:hover{
-    background: #fff;
     box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1); 
+
+}
+.core_values .core_box:hover,.container-add1 .leader-ship .leader:hover{
+    background: #fff;
     transform: translateY(-1rem);
 }
 .container-add,.container-add2{
@@ -108,6 +111,7 @@ line-height: var(--h6-line-height);
 .container-add1 .leader-ship .leader{
 box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
 border-radius: 0.5rem;
+transition: 2s;
 }
 .container-add .box2 .s-box, .container-add1 .container .s-box,.container-add3 .container .s-box{
 box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
