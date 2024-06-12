@@ -272,10 +272,11 @@
         <div class="who-we-are2">
             <div class="box1">
                 <p class="title">Who We Are</p>
-                <p class="content">
+                  <p style="font-weight: 600; font-size: 14px; margin-bottom: 4px;">About Our Company </p>
+                  <p class="content">
                     At Leewayzon, we're dedicated to transforming businesses through strategic HR solutions. Established in [year], we've become a trusted partner for organizations seeking to optimize their workforce and drive sustainable growth. With our deep industry expertise and commitment to excellence, we empower businesses to achieve their full potential.
                 </p>
-                    <p style="font-weight: 600; font-size: 14px; margin: 24px 0px 7px; ">Our Visionary Leadership </p>
+                    <p style="font-weight: 600; font-size: 14px; margin: 18px 0px 4px; ">Our Visionary Leadership </p>
                     <p class="content">
                     Meet our founder and CEO, [Founder's Name], and the rest of our leadership team who guide us in delivering innovative HR solutions and exceptional service to our clients.
                 </p>
@@ -283,22 +284,108 @@
 
             <div class="box1">
                 <p class="title">What We Do</p>
-                    <p style="font-weight: 600; font-size: 14px; margin-bottom: 7px;">Comprehensive HR Services </p>
+                    <p style="font-weight: 600; font-size: 14px; margin-bottom: 4px;">Comprehensive HR Services </p>
                     <p class="content">
                     From recruitment process outsourcing (RPO) and contract staffing to HR outsourcing and corporate training, we offer a wide range of HR solutions tailored to meet the unique needs of our clients. Our holistic approach focuses on enhancing employee engagement, driving innovation, and fostering a culture of excellence.
                 </p>
-                    <p style="font-weight: 600; font-size: 14px; margin: 24px 0px 7px; ">Why Choose Leewayzon? </p> 
+                    <p style="font-weight: 600; font-size: 14px; margin: 18px 0px 4px; ">Why Choose Leewayzon? </p> 
                     <p class="content">
                     Discover the benefits of partnering with Leewayzon, including our industry expertise, customized solutions, and commitment to delivering measurable results.
 
                 </p>
             </div>
         </div>
+<div class="text-div">
+<p class="title">
+  Our Comprehensive Offerings 
+</p>      
+<p class="subtitle">
+  Explore our range of HR services, including
+</p>  
+</div>
+<div class="who-we-are3">
+  <div class="box1">
+    <div class="row" onclick="openPage('rpo.html')">
+      <div class="text">
+        Recruitment Process Outsourcing
+        <i class="fa-solid fa-arrow-right"></i>
+      </div>
+    </div>
+    <div class="row" onclick="openPage('contract-staffing.html')">
+      <div class="text">
+        Contract Staffing
+        <i class="fa-solid fa-arrow-right"></i>
+      </div>
+    </div>
+    <div class="row">
+      <div class="text" onclick="openPage('hr-outsourcing.html')">
+        HR Outsourcing
+        <i class="fa-solid fa-arrow-right"></i>
+      </div>
+    </div>
+    <div class="row">
+      <div class="text" onclick="openPage('direct-placement.html')">
+        Direct Placement
+        <i class="fa-solid fa-arrow-right"></i>
+      </div>
+    </div>
+    <div class="row">
+      <div class="text" onclick="openPage('corporate-training.html')">
+        Corporate Training
+        <i class="fa-solid fa-arrow-right"></i>
+      </div>
+    </div>
+  </div>
 
+  <div class="box2">
+    <p class="title">Industries</p>
+    <div class="sec">
+    <p class="subTile">
+      Driving Success Across Industries 
+    </p>
+    <p class="para">
+      We serve clients across various industries, including [List of Industries]. Explore how our tailored HR solutions have helped businesses thrive in dynamic and competitive markets.
+    </p>
+  </div>
 
+  <div class="sec">
+    <p class="subTile">
+      Client Success Stories
+    </p>
+    <p class="para">
+      Read case studies and testimonials from satisfied clients who have benefited from our strategic HR services and achieved lasting success
+    </p>
+  </div>
+  </div>
+</div>
+<div class="who-we-are4">
+  <div class="sec">
+    <img src="assets/fluent-mdl2--insights.svg" alt="">
+    <p class="title">Insights</p>
+    <p class="para1"><span style="font-weight: 500;">Stay Informed with Leewayzon: </span>Access articles, whitepapers, and insights on the latest trends, best practices, and innovations in HR and workforce management.</p>
+    <p class="para2"><span style="font-weight: 500;">Industry Webinars & Events: </span>Stay updated on upcoming webinars, events, and workshops hosted by Leewayzon, featuring industry experts and thought leaders.</p>
+  </div>
 
+  <div class="sec">
+    <img src="assets/fluent--call-24-regular.svg" alt="">
+    <p class="title">Careers</p>
+    <p class="para1"><span style="font-weight: 500;">Join Our Team: </span>Discover exciting career opportunities at Leewayzon and become part of a dynamic team dedicated to driving positive change for businesses world wide.    </p>
+    <p class="para2"><span style="font-weight: 500;">Employee Testimonials: </span>Hear from our employees about their experiences working at Leewayzon and why they chose to build their careers with us.
+    </p>
+  </div>
 
+  <div class="sec">
+    <img src="assets/streamline--target.svg" alt="">
+    <p class="title">Contact Us</p>
+    <p class="para1"><span style="font-weight: 500;">Get in Touch: </span>Ready to take your HR strategy to the next level? Contact us today to discuss your needs and discover how Leewayzon can help you achieve your goals.</p>
+    <p class="para2"><span style="font-weight: 500;">Global Presence: </span>With offices in Near Sakinaka Metro Station, we're well-positioned to serve clients around the globe. Connect with us to explore strategic HR solutions tailored to your business.
+    </p>
+  </div>
+</div>
 
+<div class="who-we-are5">
+  
+</div>
 
 
 
@@ -380,8 +467,12 @@
     document.querySelector(".logos").appendChild(copy);
   </script>
 
-
-
+  <!-- script for opening page -->
+  <script>
+    function openPage(url) {
+        window.location.href = url;
+    }
+</script>
 
 </body>
 </html>

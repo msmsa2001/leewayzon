@@ -53,6 +53,7 @@
     line-height: 50px;
     font-weight: 500;
     line-height: 60px;
+    margin-bottom: 6px;
   }
   .who-we-are1 .attached-text .hero-para{
     color: var(--white-color2);
@@ -73,7 +74,7 @@
     background: var(--white-color2);
     box-shadow: 0 4px 40px 0 rgba(9, 36, 83, 0.08);
      border-radius: 10px;
-     padding: 15px 2.8rem 14px 1.8rem;
+     padding: 20px 3em 20px 1.8rem;
   }
   .who-we-are2 .box1 .title{
     font-size: 1.5rem;
@@ -86,3 +87,203 @@
     line-height: 20px;
     color: rgba(77, 77, 77, 1);
   }
+  /* third container */
+  .who-we-are3{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5rem;
+    padding: 0 5.5rem 2rem;
+  }
+  .text-div{
+    padding: 3.4rem 5.5rem 1rem;
+  }
+  .text-div .title{
+    font-size: 40px;
+    font-weight: var(--h2-weight);
+    line-height: var(--h2-line-height);
+  }
+  .text-div .subtitle{
+    color: #8E8E8E;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: var(--h2-font-family);
+    line-height: 20px;
+  }
+  .who-we-are3 .box1{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 1rem;
+    cursor: pointer;
+  }
+  .who-we-are3 .box1 .row{
+    background-color: var(--white-color2);
+    box-shadow: 0 4px 40px 0 rgba(9, 36, 83, 0.08);
+    padding: 10px 12px;
+    border-radius: 4px;
+  }
+  .who-we-are3 .box1 .row .text{
+    display: flex;
+    justify-content: space-between;
+    gap: 6rem;
+    font-size: 15px;
+    color: var(--black-color3);
+  }
+  .who-we-are3 .box1 .row .text i{
+    background-color: #E7E9FF;
+    padding: 10px;
+    font-size: 12px;
+    border-radius: 50%;
+    transition: .5s all ease-in-out;
+  }
+  .who-we-are3 .box1 .row:hover .text i{
+    transform: translateX(8px);  }
+  .who-we-are3 .box2{
+    padding: 0 7rem 0 0;
+  }
+
+  .who-we-are3 .box2 .title{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: var(--h4-height);
+    margin-bottom: 2px;
+  }
+  .who-we-are3 .box2 .sec{
+    cursor: pointer;
+  }
+  .who-we-are3 .box2 .sec .subTile{
+    font-size: 18px;
+    font-weight: 500;
+    margin: 20px 0 8px;
+    color: var(--black-color2);
+    display: inline-block;
+    position: relative;
+    }
+    .who-we-are3 .box2 .sec .subTile:after{
+      content: '';
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px;
+      bottom: -3px;
+      left: 0;
+      background-color: #5AADE9;
+      transform-origin: bottom left;
+      transition: transform 0.55s ease-out;
+    } 
+    .who-we-are3 .box2 .sec:hover .subTile:after{
+      transform: scaleX(1);
+  transform-origin: bottom left;
+    }
+  .who-we-are3 .box2 .sec .para{
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(77, 77, 77, 1);
+    margin: 0;
+  }
+
+  /* fourth container */
+  .who-we-are4{
+    padding: 2rem 5.5rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1.8rem;
+  }
+  .who-we-are4 .sec{
+    background: var(--white-color2);
+    box-shadow: 0 4px 40px 0 rgba(9, 36, 83, 0.08);
+    padding: 1.4rem 1.2rem;
+    border-radius: 6px;
+  }
+  .who-we-are4 .sec img{
+    width: 40px;
+    color: var(--blue-color1);
+    filter: invert(15%) sepia(100%) saturate(3846%) hue-rotate(223deg) brightness(95%) contrast(106%);
+  }
+  .who-we-are4 .sec .title{
+    font-size: 18px;
+    letter-spacing: .30px;
+    font-weight: 500;
+    margin: 18px 0 2px;
+  }
+  .who-we-are4 .sec .para1, .who-we-are4 .sec .para2{
+    font-size: 14px;
+    letter-spacing: .20px;
+    line-height: 20px;
+    color: rgba(77, 77, 77, 1);
+    margin: 14px 0 0;
+  }
+
+  @media screen and (max-width:1110px) {
+    .who-we-are3 .box2 {
+      padding: 0 1rem 0 0;
+  }
+  .who-we-are4 {
+    padding: 2rem 3.5rem;
+    gap: 1rem;
+  }
+  .who-we-are1 .attached-text {
+    padding: 0rem 8rem 0 5rem;
+  }
+  .who-we-are1 img {
+    height: 600px;
+  }
+}
+  @media screen and (max-width:960px) {
+    .who-we-are3 {
+      padding: 0px 3.5rem 2rem;
+      gap: 3rem;
+    }
+    .who-we-are2 {
+      padding: 3rem 3.5rem;
+    }
+    .text-div {
+      padding: 3.4rem 3.5rem 1rem;
+  }
+    .who-we-are4 {
+      grid-template-columns:  auto auto;
+    }
+  }
+  @media screen and (max-width:810px) {
+    .who-we-are2,.who-we-are3{
+      grid-template-columns: auto;
+    }
+    :root{
+      --herotitle: 46px;
+      --heropara: 14px;
+      --h2-line-height: 40px;
+    }
+    .who-we-are1 .attached-text .hero-para {
+      margin-top: 8px;
+      line-height: 20px;
+    }
+    .text-div .title {
+      font-size: 35px;
+    }
+  }
+  @media screen and (max-width:620px) {
+    .who-we-are4 {
+      grid-template-columns: auto;
+  }
+  .who-we-are3 .box1 .row .text {
+    gap: 1rem;
+  }
+  .text-div .title {
+    font-size: 31px;
+}
+}
+@media screen and (max-width:480px) {
+  .who-we-are2 {
+    padding: 3rem 2rem;
+}
+.text-div {
+  padding: 3.4rem 1.8rem 1rem;
+}
+.who-we-are3 {
+  padding: 0px 1.8rem 2rem;}
+  .who-we-are4 {
+    padding: 2rem 2rem;
+  }
+  .who-we-are1 .attached-text {
+    padding: 0 2.4rem;
+  }
+}
