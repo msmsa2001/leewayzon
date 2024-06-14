@@ -117,9 +117,9 @@ padding-right: 5rem;
   padding-left: 0;
 }
 
-.nav-modal .nav1 .container ul li a{
-  font-size: 14px;
-  font-weight: 600;
+.nav-modal .nav1 .container ul li a, .navs ul li a, .navbar .navs ul li i{
+  font-size: 14px !important;
+  font-weight: 600 !important;
 }
 .nav-modal .nav2{
   background: #eaeaea;
@@ -279,9 +279,9 @@ padding-right: 5rem;
   .navbar .button {
     display: none;
   } */
-  .about-us-nav,.training-nav{
+  /* .about-us-nav,.training-nav{
     display: none;
-  }
+  } */
 }
 /* hero */
 .home .hero,
