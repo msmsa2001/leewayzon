@@ -165,6 +165,7 @@
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 1.4rem;
+    margin-top: 4rem;
   }
   
   .our-partner3 .sec-1 .card {
@@ -204,6 +205,18 @@
     font-size: 15px;
     color: var(--black-color2);
     line-height: 22px;
+  }
+  .our-partner3 .title{
+    font-size: var(--h2-size);
+    font-weight: var(--h2-weight);
+    line-height: var(--h2-line-height);
+  }
+  .our-partner3 .subTitle{
+    color: #8E8E8E;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: var(--h2-font-family);
+    line-height: 20px;
   }
   @media screen and (max-width:1010px) {
     .our-partner2,.our-partner3 {
