@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contract Staffing</title>
+  <title>Leewayzon</title>
   <link rel="stylesheet" href="service.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
@@ -55,7 +55,7 @@
     </div>
     <div class="navs">
       <ul>
-        <li ><a href="index.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li id="about"><a href="about.html">Who we are</a><i class="fa-solid fa-chevron-down"></i>
           <div class="about-us-nav">
             <div class="nav-modal">
@@ -105,13 +105,14 @@
                   <p>We deliver best-in-class solutions for top financial services and technology firms globally.</p>
                   <ul>
                     <li><a href="AI.html">Artificial Intelligence</a></li>
-                    <li><a href="">Consulting</a></li>
-                    <li><a href="">Digital</a></li>
+                    <li id="rpo"><a href="rpo.html">RPO</a></li>
+                    <li><a href="contract-staffing.html">Contract staffing</a></li>
+
                   </ul>
                   <ul>
-                    <li><a href="">Cloud & DevOps</a></li>
-                    <li><a href="">Data</a></li>
-                    <li><a href="">Software Engineering</a></li>
+                    <li><a href="hr-outsourcing.html">HR outsourcing</a></li>
+                    <li><a href="direct-placement.html">Direct Placement</a></li>
+                    <li><a href="corporate-training.html">Corporate Training</a></li>
                   </ul>
                 </div>
               </div>
@@ -165,8 +166,8 @@
                   </div>
                 </div>
               </div>
-              
-              
+
+
               <div class="nav2">
                 <div>
                   <h6>Latest Press Release</h6>
@@ -215,7 +216,7 @@
             </div>
           </div>
         </li>
-        <li class="service" id="Services"><a href="">Services</a><i class="fa-solid fa-chevron-down"
+        <!-- <li class="service" id="Services"><a href="">Services</a><i class="fa-solid fa-chevron-down"
             id="dropdown"></i>
             <div class="" id="nav-service">
               <div class="nav-modal">
@@ -248,15 +249,8 @@
                 </div>
               </div>
             </div>
-          <!-- <ul class="drop-menu">
-            <li><a href="rpo.html">RPO</a></li>
-            <li><a href="contract-staffing.html">Contract staffing</a></li>
-            <li><a href="hr-outsourcing.html">HR outsourcing</a></li>
-            <li><a href="direct-placement.html">Direct Placement</a></li>
-            <li><a href="corporate-training.html">Corporate Training</a></li>
-          </ul> -->
-        </li>
-       <li><a href="">Careers</a></li>
+        </li> -->
+        <li><a href="">Careers</a></li>
 
         <!-- <li><a href="">Contact us</a></li> -->
         <i class="fa-solid fa-bars" onclick="sidebar()" id="sidebar"></i>
@@ -267,7 +261,8 @@
         <i class="fa-solid fa-arrow-up" style=" transform: rotate(45deg); margin-left: 0.6rem; font-size: 12.8px;"></i>
       </button>
       <div class="menu">
-        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1200px-Flag_of_India.svg.png" onclick=" country()">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1200px-Flag_of_India.svg.png"
+          onclick=" country()">
       </div>
       <ul id="menuList">
         <div class="globe">
@@ -278,24 +273,36 @@
             close
           </span>
         </div>
-        <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Flag_of_the_United_Arab_Emirates.svg/640px-Flag_of_the_United_Arab_Emirates.svg.png">UAE <span>UE</span></li>
-        <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Flag_of_Maldives.svg/1200px-Flag_of_Maldives.svg.png">Maldives <span>MA</span></li>
-        <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Flag_of_Oman.svg/800px-Flag_of_Oman.svg.png">Oman <span>OM</span></li>
-        <li><img src="https://media.istockphoto.com/id/1092635968/vector/australia-flag.jpg?s=612x612&w=0&k=20&c=YEp_hCl7Ub0nteWFKh6HrZwSFzUh3xmEYWuJe-RRt5Y=">Austrailia <span>AU</span></li>
-        <li><img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Canada_%28Pantone%29.svg">Canada <span>CA</span></li>
-        <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg/1200px-Flag_of_the_United_Kingdom_%283-5%29.svg.png">United Kingdom <span>GB</span></li>
+        <li><img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Flag_of_the_United_Arab_Emirates.svg/640px-Flag_of_the_United_Arab_Emirates.svg.png">UAE
+          <span>UE</span></li>
+        <li><img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Flag_of_Maldives.svg/1200px-Flag_of_Maldives.svg.png">Maldives
+          <span>MA</span></li>
+        <li><img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Flag_of_Oman.svg/800px-Flag_of_Oman.svg.png">Oman
+          <span>OM</span></li>
+        <li><img
+            src="https://media.istockphoto.com/id/1092635968/vector/australia-flag.jpg?s=612x612&w=0&k=20&c=YEp_hCl7Ub0nteWFKh6HrZwSFzUh3xmEYWuJe-RRt5Y=">Austrailia
+          <span>AU</span></li>
+        <li><img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Canada_%28Pantone%29.svg">Canada
+          <span>CA</span></li>
+        <li><img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg/1200px-Flag_of_the_United_Kingdom_%283-5%29.svg.png">United
+          Kingdom <span>GB</span></li>
 
 
       </ul>
     </div>
-  </div> 
+  </div>
   <div class="side-bar" id="side-bar">
     <ul>
       <li><a href="index.html">Home</a></li>
       <li>
         <div>
           <a href="about.html">Who we are</a>
-          <i class="fa-solid fa-chevron-down chevron-icon" onclick="toggleMenu(this, document.getElementById('who'))"></i>
+          <i class="fa-solid fa-chevron-down chevron-icon"
+            onclick="toggleMenu(this, document.getElementById('who'))"></i>
         </div>
         <ul class="who" id="who" style="display: none;">
           <li><a href="">Our Company</a></li>
@@ -315,53 +322,66 @@
       <li>
         <div>
           <a href="">What We Do</a>
-          <i class="fa-solid fa-chevron-down chevron-icon" onclick="toggleMenu(this, document.getElementById('what_we'))"></i>
+          <i class="fa-solid fa-chevron-down chevron-icon"
+            onclick="toggleMenu(this, document.getElementById('what_we'))"></i>
         </div>
         <ul class="who" id="what_we" style="display: none;">
           <li><a href="AI.html">Artificial Intelligence</a></li>
-          <li><a href="">Consulting</a></li>
-          <li><a href="">Digital</a></li>
-          <li><a href="">Cloud & DevOps</a></li>
-          <li><a href="">Data</a></li>
-          <li><a href="">Software Engineering</a></li>
+          <li><a href="rpo.html">RPO</a></li>
+          <li><a href="contract-staffing.html">Contract Staffing</a></li>
+          <li><a href="corporate-training.html">Corporate Training</a></li>
+          <li><a href="direct-placement.html">Direct Placement</a></li>
+          <li><a href="hr-outsourcing.html">HR Outsourcing</a></li>
+          <li><a href="payroll.html">Pyroll</a></li>
         </ul>
       </li>
       <li>
         <div>
           <a href="">Industries</a>
-          <i class="fa-solid fa-chevron-down chevron-icon" onclick="toggleMenu(this, document.getElementById('industry'))"></i>
+          <i class="fa-solid fa-chevron-down chevron-icon"
+            onclick="toggleMenu(this, document.getElementById('industry'))"></i>
         </div>
         <ul class="who" id="industry" style="display: none;">
-          <li><div><a href="">Hi-Tech</a> <i class="fa-solid fa-chevron-down chevron-icon" onclick="toggleMenu(this, document.getElementById('Hi_tech'))"></i></div>
-          <ul class="who" id="Hi_tech" style="display: none;">
-            <li><a href="">Product Engineering</a></li>
-                      <li><a href="">Re-engineering & Transformation</a></li>
-                      <li><a href="">Cybersecurity</a></li>
-                      <li><a href="">Emerging Technologies</a></li>
-          </ul></li>
-          <li><div><a href="">Financial Services</a> <i class="fa-solid fa-chevron-down chevron-icon" onclick="toggleMenu(this, document.getElementById('financial_services'))"></i></div>
+          <li>
+            <div><a href="">Hi-Tech</a> <i class="fa-solid fa-chevron-down chevron-icon"
+                onclick="toggleMenu(this, document.getElementById('Hi_tech'))"></i></div>
+            <ul class="who" id="Hi_tech" style="display: none;">
+              <li><a href="">Product Engineering</a></li>
+              <li><a href="">Re-engineering & Transformation</a></li>
+              <li><a href="">Cybersecurity</a></li>
+              <li><a href="">Emerging Technologies</a></li>
+            </ul>
+          </li>
+          <li>
+            <div><a href="">Financial Services</a> <i class="fa-solid fa-chevron-down chevron-icon"
+                onclick="toggleMenu(this, document.getElementById('financial_services'))"></i></div>
             <ul class="who" id="financial_services" style="display: none;">
               <li><a href="">Capital Markets</a></li>
-                      <li><a href="">Commerical Banking</a></li>
-                      <li><a href="">Retail Banking</a></li>
-                      <li><a href="">Payment</a></li>
-                      <li><a href="">Exchange</a></li>
-            </ul></li>
-            <li><div><a href="">Insurence</a> <i class="fa-solid fa-chevron-down chevron-icon" onclick="toggleMenu(this, document.getElementById('insurence'))"></i></div>
-              <ul class="who" id="insurence" style="display: none;">
-                <li><a href="">Property & Casuslity</a></li>
-                      <li><a href="">Reinsurence</a></li>
-                      <li><a href="">Speciality</a></li>
-                      <li><a href="">Emerging Technologies</a></li>
-              </ul></li>
-         
+              <li><a href="">Commerical Banking</a></li>
+              <li><a href="">Retail Banking</a></li>
+              <li><a href="">Payment</a></li>
+              <li><a href="">Exchange</a></li>
+            </ul>
+          </li>
+          <li>
+            <div><a href="">Insurence</a> <i class="fa-solid fa-chevron-down chevron-icon"
+                onclick="toggleMenu(this, document.getElementById('insurence'))"></i></div>
+            <ul class="who" id="insurence" style="display: none;">
+              <li><a href="">Property & Casuslity</a></li>
+              <li><a href="">Reinsurence</a></li>
+              <li><a href="">Speciality</a></li>
+              <li><a href="">Emerging Technologies</a></li>
+            </ul>
+          </li>
+
         </ul>
       </li>
       <li><a href="">Our Work</a></li>
       <li>
         <div>
           <a href="">Insights</a>
-          <i class="fa-solid fa-chevron-down chevron-icon" onclick="toggleMenu(this, document.getElementById('Insights'))"></i>
+          <i class="fa-solid fa-chevron-down chevron-icon"
+            onclick="toggleMenu(this, document.getElementById('Insights'))"></i>
         </div>
         <ul class="who" id="Insights" style="display: none;">
           <li><a href="">Insight </a></li>
@@ -370,7 +390,7 @@
           <li><a href="">Video</a></li>
         </ul>
       </li>
-      <li>
+      <!-- <li>
         <div>
           <a href="">Services</a>
           <i class="fa-solid fa-chevron-down chevron-icon" onclick="toggleMenu(this, document.getElementById('services'))"></i>
@@ -383,7 +403,7 @@
           <li><a href="hr-outsourcing.html">HR Outsourcing</a></li>
           <li><a href="payroll.html">Pyroll</a></li>
         </ul>
-      </li>
+      </li> -->
       <li><a href="index.html#training">Training</a></li>
       <li><a href="">Career</a></li>
       <div class="button">
@@ -394,17 +414,19 @@
   </div>
 
   <!-- container 1 -->
-  <div class="container1" style=" padding-top: 3rem;">
+  <div class="container1" style=" padding-top: 3rem;" data-aos="fade-up"
+  data-aos-duration="3000">
     <img src="assets/contract staffing bg image.jpg" alt="">
-    <div class="attached-text">
-        <p class="hero-title">Innovative and
+    <div class="attached-text" >
+        <p class="hero-title" >Innovative and
           transformative AI solutions
           to grow your business</p>
         <p class="hero-para" >Explore the potential of AI technology to revolutionize your business with Leewayzon.</p>
     </div>
 </div>
   <!-- container 2 start  -->
-  <div class="container-add">
+  <div class="container-add" data-aos="fade-up"
+  data-aos-duration="3000">
     <div class="box1">
       <h3>Generative AI</h3>
       <h6>We specialize in data science, large language
@@ -416,7 +438,7 @@
     <div class="box2">
       <div class="s-box">
         <span class="material-symbols-outlined">
-          check_circle
+          database
         </span>
         <h4>Data Science</h4>
         <p>Combine domain knowledge with the principles of computer science, mathematics, and statistics to unlock
@@ -442,10 +464,10 @@
       </div>
       <div class="s-box">
         <span class="material-symbols-outlined">
-          check_circle
+          psychology
         </span>
         <h4>Generative AI and Large Language Models</h4>
-        <p>ur generative AI (GenAI) solutions produce enhanced business content, including text, imagery, audio, and
+        <p>Our generative AI (GenAI) solutions produce enhanced business content, including text, imagery, audio, and
           synthetic data. We leverage large language models (LLMs) enabled by AI accelerators to process vast amounts of
           text data and derive actionable insights for business.</p>
         <div class="points">
@@ -469,7 +491,7 @@
       </div>
       <div class="s-box">
         <span class="material-symbols-outlined">
-          check_circle
+          emoji_objects
         </span>
         <h4>Customized AI-Driven Solutions</h4>
         <p>Leveraging the latest AI technologies, we tailor solutions to meet industry-specific needs. Our team of
@@ -498,13 +520,13 @@
     </div>
   </div>
   <div class="container-add1">
-    <h1>AI Strategy and Architecture</h1>
-    <p>Our AI strategy and architecture services are designed to create
-      innovative solutions that deliver tangible business value.</p>
+   
       <div class="container">
-        <div class="s-box">
+        
+        <!-- <div class="s-box" data-aos="fade-up"
+        data-aos-duration="3000">
           <span class="material-symbols-outlined">
-            check_circle
+            emoji_objects
           </span>
           <h4>Customized AI-Driven Solutions</h4>
           <p>Leveraging the latest AI technologies, we tailor solutions to meet industry-specific needs. Our team of engineers can customize the training and fine-tuning of models for specific tasks, ensuring continuous improvement and alignment with business goals.</p>
@@ -526,10 +548,11 @@
             </i>
             <p>Transform processes and workflows to ensure agility, resilience, and competitive advantage</p>
           </div>
-        </div>
-        <div class="s-box">
+        </div> -->
+        <div class="s-box" data-aos="fade-up"
+        data-aos-duration="3000">
           <span class="material-symbols-outlined">
-            check_circle
+            psychology
           </span>
           <h4>AI Strategy and Architecture</h4>
           <p>Our AI strategy and architecture services are designed to create innovative solutions that deliver tangible business value.</p>
@@ -552,6 +575,10 @@
             <p>Deploying state-of-the-art AI technologies for agility and adaptability</p>
           </div>
         </div>
+        <div class="box" style="margin-top: 4rem;">
+          <h1>AI Strategy and Architecture</h1>
+          <p>Our AI strategy and architecture services are designed to create
+            innovative solutions that deliver tangible business value.</p></div>
       </div>
   </div>
  <!-- <div class="container-add2">
@@ -616,7 +643,8 @@
  </div>
  <div class="container-add3">
   <div class="container">
-    <div class="s-box">
+    <div class="s-box" data-aos="fade-up"
+    data-aos-duration="3000">
       <!-- <span class="material-symbols-outlined">
         check_circle
       </span> -->
@@ -641,7 +669,8 @@
         <p>Robust protection through regular audits and security measures</p>
       </div>
     </div>
-    <div class="s-box">
+    <div class="s-box" data-aos="fade-up"
+    data-aos-duration="3000">
       <!-- <span class="material-symbols-outlined">
         check_circle
       </span> -->
@@ -666,7 +695,8 @@
         <p>Expedited migration from legacy systems to modern technology stacks</p>
       </div>
     </div>
-    <div class="s-box">
+    <div class="s-box" data-aos="fade-up"
+    data-aos-duration="3000">
       <!-- <span class="material-symbols-outlined">
         check_circle
       </span> -->
@@ -691,7 +721,8 @@
         <p>Ensuring data quality and enabling efficient processing and integration for AI applications</p>
       </div>
     </div>
-    <div class="s-box">
+    <div class="s-box" data-aos="fade-up"
+    data-aos-duration="3000">
       <!-- <span class="material-symbols-outlined">
         check_circle
       </span> -->
@@ -716,7 +747,8 @@
         <p>Deploying state-of-the-art AI technologies for agility and adaptability</p>
       </div>
     </div>
-    <div class="s-box">
+    <div class="s-box" data-aos="fade-up"
+    data-aos-duration="3000">
       <!-- <span class="material-symbols-outlined">
         check_circle
       </span> -->
@@ -741,7 +773,8 @@
         <p>Comprehensive solutions through the entire software development lifecycle</p>
       </div>
     </div>
-    <div class="s-box">
+    <div class="s-box" data-aos="fade-up"
+    data-aos-duration="3000">
       <!-- <span class="material-symbols-outlined">
         check_circle
       </span> -->
