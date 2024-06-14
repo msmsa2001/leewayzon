@@ -12,6 +12,8 @@
   z-index: 111;
   position: fixed;
   width: 100%;
+  box-shadow: 0px 25px 25px -20px rgba(0,0,0,0.20);
+
 }
 .navbar,
 .navbar .navs ul,
@@ -29,7 +31,7 @@
 .navbar .navs ul li,
 .side-bar ul li {
   /* margin-right: var(--list-margin-right); */
-  margin-right: 0.5rem;
+  margin-right: 0.88rem;
   list-style: none;
 }
 .drop-menu {
@@ -41,8 +43,21 @@
 .drop-menu li {
   padding: 0.5rem !important;
 }
-
-#about:hover .about-us-nav, #training:hover .training-nav, .service:hover .drop-menu,#what_we_do:hover .what_we_do, #industy:hover .industy, #work:hover .work, #insight:hover .insight{
+.navs ul li a{
+  position: relative;
+}
+.navs ul li:hover a::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px; 
+  width: 100%;
+  background-color: #000;
+  transition: 15s;
+}
+#about:hover .about-us-nav, #training:hover .training-nav, .service:hover .drop-menu,#what_we_do:hover .what_we_do, #industy:hover .industy, #work:hover .work, #insight:hover .insight, #Services:hover #nav-service{
   display: block !important;
 }
 li:hover i{
@@ -113,11 +128,30 @@ padding-right: 5rem;
 .nav-modal .nav2 div p{
   font-size: 14px;
 }
- .about-us-nav,.what_we_do,.industy, .work,.insight{
+ .about-us-nav,.what_we_do,.industy, .work,.insight,#who,#nav-service{
   width: 100%;
   display: none;
-
  }
+#who{
+  text-align: left;
+
+}
+#who li a, #what_we li a,#industry li a,#Insights li a,#services li a{
+  font-size: 15px;
+  font-weight: 500 !important;
+  color: #636060 !important;
+}
+.chevron-icon {
+  transition: transform 0.3s;
+}
+
+.chevron-icon.up {
+  transform: rotate(180deg);
+}
+
+.chevron-icon.down {
+  transform: rotate(0deg);
+}
 .training-nav{ 
   display: none; 
   width: 100%;
@@ -182,16 +216,24 @@ padding-right: 5rem;
   position: fixed;
   right: 0;
   height: 100vh;
-  top: 3rem;
-  width: 15rem;
+  top: 3.5rem;
+  width: 100%;
   z-index: 1111;
   background: #F5FAFE;
+  overflow-y: auto;
+  text-align: left;
 }
-.side-bar {
-  text-align: center;
+.side-bar ul li div{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
 }
 .side-bar ul li {
   margin: 1rem;
+}
+.side-bar ul li a{
+  font-weight: 600 !important;
+  font-size: 15px;
 }
 .navbar .navs ul li i,
 .side-bar ul li i {
@@ -201,7 +243,23 @@ padding-right: 5rem;
   display: none;
   font-size: 24px;
 }
-@media screen and (max-width:761px) {
+@media screen and (max-width:1170px) {
+  .navbar{
+    padding: 1rem !important;
+  }
+  .navbar .navs ul li{
+    margin-right: 0.4rem !important;
+  }
+}
+@media screen and (min-width:1071px) {
+  .side-bar{
+    display: none !important;
+  }
+}
+@media screen and (max-width:1070px) {
+  .side-bar{
+    display: none ;
+  }
   #sidebar {
     display: block;
   }
@@ -209,6 +267,18 @@ padding-right: 5rem;
   .navbar .button {
     display: none;
   }
+}
+@media screen and (max-width:761px) {
+  /* .side-bar{
+    display: none ;
+  }
+  #sidebar {
+    display: block;
+  }
+  .navbar .navs ul li,
+  .navbar .button {
+    display: none;
+  } */
   .about-us-nav,.training-nav{
     display: none;
   }
@@ -690,35 +760,35 @@ transition: transform 0.5s ease;
   /* cursor: pointer; */
 }
 .training .container #box1:hover{
-  background-color: #a0bff0;
+  background-color: #2d5fb0;
   color: #fff;
 }
 .training .container #box2:hover{
-  background-color: #fc8983;
+  background-color: #f74137;
   color: #fff;
 }
 .training .container #box3:hover{
-  background-color: #e5bd84;
+  background-color: #f7ab42;
   color: #fff;
 }
 .training .container #box4:hover{
-  background-color: #83ca89;
+  background-color: #63f570;
   color: #fff;
 }
 .training .container #box5:hover{
-  background-color: #caa9d3;
+  background-color: #c92ef4;
   color: #fff;
 }
 .training .container #box6:hover{
-  background-color: #fdb0c0;
+  background-color: #f85777;
   color: #fff;
 }
 .training .container #box7:hover{
-  background-color: #e7a3e4;
+  background-color: #f42fea;
   color: #fff;
 }
 .training .container #box8:hover{
-  background-color: #9f7474;
+  background-color: #f96565;
   color: #fff;
 }
 
@@ -1165,6 +1235,7 @@ padding: 2rem 0;
   display: flex;
   gap: 0.6rem ;
   z-index: 2;
+  align-items: center;
 }
 .globe{
   display: flex;

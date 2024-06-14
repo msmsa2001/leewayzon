@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HR Outsourcing</title>
+    <title>Leewayzon</title>
     <link rel="stylesheet" href="service.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
@@ -54,7 +54,7 @@
       </div>
       <div class="navs">
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li ><a href="index.html">Home</a></li>
           <li id="about"><a href="about.html">Who we are</a><i class="fa-solid fa-chevron-down"></i>
             <div class="about-us-nav">
               <div class="nav-modal">
@@ -65,10 +65,10 @@
                       transform and empower businesses.</p>
                     <ul>
                       <li><a href="">Our Company</a></li>
-                      <li><a href="">Our Core Values</a></li>
+                      <li><a href="core_values.html">Our Core Values</a></li>
                       <li><a href="">Board of Directors</a></li>
                       <li><a href="">Leadership Team</a></li>
-                      <li><a href="">Diversity,Equity & Inclusion</a></li>
+                      <li><a href="diversity.html">Diversity,Equity & Inclusion</a></li>
                       <li><a href="">Our Partners</a></li>
                     </ul>
                     <ul>
@@ -103,7 +103,7 @@
                   <div class="container">
                     <p>We deliver best-in-class solutions for top financial services and technology firms globally.</p>
                     <ul>
-                      <li><a href="">Artificial Intelligence</a></li>
+                      <li><a href="AI.html">Artificial Intelligence</a></li>
                       <li><a href="">Consulting</a></li>
                       <li><a href="">Digital</a></li>
                     </ul>
@@ -214,16 +214,46 @@
               </div>
             </div>
           </li>
-          <li class="service"><a href="index.html#services">Services</a><i class="fa-solid fa-chevron-down"
+          <li class="service" id="Services"><a href="">Services</a><i class="fa-solid fa-chevron-down"
               id="dropdown"></i>
-            <ul class="drop-menu">
+              <div class="" id="nav-service">
+                <div class="nav-modal">
+                  <div class="nav1">
+                    <h6>Services</h6>
+                    <div class="container">
+                      <p>Synechron is an innovative global consulting firm delivering industry-leading digital solutions to
+                        transform and empower businesses.</p>
+                      <ul>
+                        <li id="rpo"><a href="rpo.html">RPO</a></li>
+                        <li><a href="contract-staffing.html">Contract staffing</a></li>
+                        <li><a href="hr-outsourcing.html">HR outsourcing</a></li>
+                        <li><a href="direct-placement.html">Direct Placement</a></li>
+                        <li><a href="corporate-training.html">Corporate Training</a></li>
+                      </ul>
+                     
+                    </div>
+                  </div>
+                  <div class="nav2">
+                    <div>
+                      <h6>Latest Press Release</h6>
+                      <p>Synechron Enhances Global Operations with Strategic Senior Appointments
+                      </p>
+                    </div>
+                    <div>
+                      <h6>Latest In the News</h6>
+                      <p>All Hallucinations: Why Bots Make Up Information.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <!-- <ul class="drop-menu">
               <li><a href="rpo.html">RPO</a></li>
-              <!-- <li><a href="payroll.html">Pay-roll Services</a></li> -->
               <li><a href="contract-staffing.html">Contract staffing</a></li>
               <li><a href="hr-outsourcing.html">HR outsourcing</a></li>
               <li><a href="direct-placement.html">Direct Placement</a></li>
               <li><a href="corporate-training.html">Corporate Training</a></li>
-            </ul>
+            </ul> -->
           </li>
          <li><a href="">Careers</a></li>
   
@@ -257,20 +287,110 @@
   
         </ul>
       </div>
-    </div>
+    </div> 
     <div class="side-bar" id="side-bar">
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About us</a></i></li>
-        <li class="side-service"><a href="index.html#services">Services</a></li>
+        <li>
+          <div>
+            <a href="about.html">Who we are</a>
+            <i class="fa-solid fa-chevron-down chevron-icon" onclick="toggleMenu(this, document.getElementById('who'))"></i>
+          </div>
+          <ul class="who" id="who" style="display: none;">
+            <li><a href="">Our Company</a></li>
+            <li><a href="core_values.html">Our Core Values</a></li>
+            <li><a href="">Board Of Directors</a></li>
+            <li><a href="">Leadership Team</a></li>
+            <li><a href="">Our Company</a></li>
+            <li><a href="diversity.html">Diversity,Equity & Inclusion</a></li>
+            <li><a href="">Our Partners</a></li>
+            <li><a href="">Corporate Social Responsibilities</a></li>
+            <li><a href="">In the News</a></li>
+            <li><a href="">Press Releases</a></li>
+            <li><a href="">Events</a></li>
+            <li><a href="">Awards</a></li>
+          </ul>
+        </li>
+        <li>
+          <div>
+            <a href="">What We Do</a>
+            <i class="fa-solid fa-chevron-down chevron-icon" onclick="toggleMenu(this, document.getElementById('what_we'))"></i>
+          </div>
+          <ul class="who" id="what_we" style="display: none;">
+            <li><a href="AI.html">Artificial Intelligence</a></li>
+            <li><a href="">Consulting</a></li>
+            <li><a href="">Digital</a></li>
+            <li><a href="">Cloud & DevOps</a></li>
+            <li><a href="">Data</a></li>
+            <li><a href="">Software Engineering</a></li>
+          </ul>
+        </li>
+        <li>
+          <div>
+            <a href="">Industries</a>
+            <i class="fa-solid fa-chevron-down chevron-icon" onclick="toggleMenu(this, document.getElementById('industry'))"></i>
+          </div>
+          <ul class="who" id="industry" style="display: none;">
+            <li><div><a href="">Hi-Tech</a> <i class="fa-solid fa-chevron-down chevron-icon" onclick="toggleMenu(this, document.getElementById('Hi_tech'))"></i></div>
+            <ul class="who" id="Hi_tech" style="display: none;">
+              <li><a href="">Product Engineering</a></li>
+                        <li><a href="">Re-engineering & Transformation</a></li>
+                        <li><a href="">Cybersecurity</a></li>
+                        <li><a href="">Emerging Technologies</a></li>
+            </ul></li>
+            <li><div><a href="">Financial Services</a> <i class="fa-solid fa-chevron-down chevron-icon" onclick="toggleMenu(this, document.getElementById('financial_services'))"></i></div>
+              <ul class="who" id="financial_services" style="display: none;">
+                <li><a href="">Capital Markets</a></li>
+                        <li><a href="">Commerical Banking</a></li>
+                        <li><a href="">Retail Banking</a></li>
+                        <li><a href="">Payment</a></li>
+                        <li><a href="">Exchange</a></li>
+              </ul></li>
+              <li><div><a href="">Insurence</a> <i class="fa-solid fa-chevron-down chevron-icon" onclick="toggleMenu(this, document.getElementById('insurence'))"></i></div>
+                <ul class="who" id="insurence" style="display: none;">
+                  <li><a href="">Property & Casuslity</a></li>
+                        <li><a href="">Reinsurence</a></li>
+                        <li><a href="">Speciality</a></li>
+                        <li><a href="">Emerging Technologies</a></li>
+                </ul></li>
+           
+          </ul>
+        </li>
+        <li><a href="">Our Work</a></li>
+        <li>
+          <div>
+            <a href="">Insights</a>
+            <i class="fa-solid fa-chevron-down chevron-icon" onclick="toggleMenu(this, document.getElementById('Insights'))"></i>
+          </div>
+          <ul class="who" id="Insights" style="display: none;">
+            <li><a href="">Insight </a></li>
+            <li><a href="">Podcast</a></li>
+            <li><a href="">White Papers</a></li>
+            <li><a href="">Video</a></li>
+          </ul>
+        </li>
+        <li>
+          <div>
+            <a href="">Services</a>
+            <i class="fa-solid fa-chevron-down chevron-icon" onclick="toggleMenu(this, document.getElementById('services'))"></i>
+          </div>
+          <ul class="who" id="services" style="display: none;">
+            <li><a href="rpo.html">RPO</a></li>
+            <li><a href="contract-staffing.html">Contract Staffing</a></li>
+            <li><a href="corporate-training.html">Corporate Training</a></li>
+            <li><a href="direct-placement.html">Direct Placement</a></li>
+            <li><a href="hr-outsourcing.html">HR Outsourcing</a></li>
+            <li><a href="payroll.html">Pyroll</a></li>
+          </ul>
+        </li>
         <li><a href="index.html#training">Training</a></li>
+        <li><a href="">Career</a></li>
         <div class="button">
-   <button onclick="openmodal()">Contact us<i class="fa-solid fa-arrow-up"
-                style=" transform: rotate(45deg); margin-left: 0.6rem; font-size: 12.8px;"></i></button>
+          <button onclick="openmodal()">Contact us<i class="fa-solid fa-arrow-up"
+              style=" transform: rotate(45deg); margin-left: 0.6rem; font-size: 12.8px;"></i></button>
         </div>
       </ul>
     </div>
-
     <!-- navBar end -->
 
     <!-- container 1 start  -->
