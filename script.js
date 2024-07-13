@@ -1,5 +1,5 @@
+var sideNav = document.getElementById("side-bar");
 function sidebar() {
-  var sideNav = document.getElementById("side-bar");
   var icon = document.getElementById("sidebar");
   
   if (sideNav.style.display === "none" || sideNav.style.display === "") {

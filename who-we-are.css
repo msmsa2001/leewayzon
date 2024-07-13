@@ -76,6 +76,18 @@
      border-radius: 10px;
      padding: 20px 3em 20px 1.8rem;
   }
+  .video{
+    box-shadow: 0 4px 40px 0 rgba(9, 36, 83, 0.08);
+    background: var(--white-color2);
+    cursor: pointer;
+    border-radius: 0.2rem;
+    overflow: hidden;
+
+  }
+  .video-container a{
+    text-decoration: none;
+    color: #4D4C4C;
+  }
   .who-we-are2 .box1 .title{
     font-size: 1.5rem;
     font-weight: 600;
@@ -182,11 +194,17 @@
   }
 
   /* fourth container */
-  .who-we-are4{
+  .who-we-are4, .video-container{
     padding: 2rem 5.5rem;
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 1.8rem;
+  }
+  .video .video-thumbnail img{
+width: 100%;
+  }
+  .video p{
+    padding: 0.4rem 1.5rem;
   }
   .who-we-are4 .sec{
     background: var(--white-color2);
@@ -268,7 +286,7 @@
     .who-we-are3 .box2 {
       padding: 0 1rem 0 0;
   }
-  .who-we-are4 {
+  .who-we-are4, .video-container{
     padding: 2rem 3.5rem;
     gap: 1rem;
   }
@@ -290,7 +308,7 @@
     .text-div {
       padding: 3.4rem 3.5rem 1rem;
   }
-    .who-we-are4 {
+  .who-we-are4,.video-container{
       grid-template-columns:  auto auto;
     }
     .who-we-are6 .sec{
@@ -319,7 +337,7 @@
     }
   }
   @media screen and (max-width:620px) {
-    .who-we-are4 {
+    .who-we-are4,.video-container {
       grid-template-columns: auto;
   }
   .who-we-are3 .box1 .row .text {

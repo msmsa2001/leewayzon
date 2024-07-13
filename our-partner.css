@@ -65,7 +65,7 @@
   .our-partner1 .attached-text a{
     text-decoration: none;
   }
-  .our-partner1 .attached-text a button{
+  .our-partner1 .attached-text a button,.container-add2 .content a button{
     background-color: var(--black-color1);
     color: #FFFFFF;
     border: 1px solid #FFFFFF;
@@ -77,6 +77,14 @@
     font-size: var(--paraSize);
     font-weight: 500;
     letter-spacing: .30px;
+  }
+  .container-add2 .content a button{
+    background: #0c59db;
+    margin-top: 0;
+    padding: 0.5rem 1.5rem;
+  }
+  .container-add2 .content a button:hover{
+    color: #171c25;
   }
   .our-partner1 .attached-text a button:hover{
     /* transform: translateY(-4px); */

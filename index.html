@@ -29,8 +29,9 @@
 <body>
   <!-- The Modal -->
   <div id="myModal" class="modal">
-    <div class="modal-content">
-      <form>
+    <div class="modal-content" style="position: relative;">
+      <form >
+        <i class="fa-solid fa-xmark close" id="modal-cross"></i>
         <input type="number" placeholder="Enter Number *">
         <input type="email" placeholder="Enter your Email *">
         <textarea name="" id="" placeholder="message"></textarea>
@@ -58,18 +59,17 @@
               <div class="nav1">
                 <h6>Who We are</h6>
                 <div class="container">
-                  <p>Synechron is an innovative global consulting firm delivering industry-leading digital solutions to
+                  <p>Leewayzon is an innovative global consulting firm delivering industry-leading digital solutions to
                     transform and empower businesses.</p>
                   <ul>
-                    <li><a href="who-we-are.html">Our Company</a></li>
+                    <li><a href="our-company.html">Our Company</a></li>
                     <li><a href="core_values.html">Our Core Values</a></li>
-                    <li><a href="">Board of Directors</a></li>
-                    <li><a href="">Leadership Team</a></li>
+                    <li><a href="about.html#leadership-team">Leadership Team</a></li>
                     <li><a href="diversity.html">Diversity,Equity & Inclusion</a></li>
                     <li><a href="our-partner.html">Our Partners</a></li>
                   </ul>
                   <ul>
-                    <li><a href="">Corporate Social Responsibilities</a></li>
+                    <li><a href="">Corporate Sustainability</a></li>
                     <li><a href="">In the News</a></li>
                     <li><a href="">Press Releases</a></li>
                     <li><a href="">Events</a></li>
@@ -80,7 +80,7 @@
               <div class="nav2">
                 <div>
                   <h6>Latest Press Release</h6>
-                  <p>Synechron Enhances Global Operations with Strategic Senior Appointments
+                  <p>Leewayzon Enhances Global Operations with Strategic Senior Appointments
                   </p>
                 </div>
                 <div>
@@ -115,7 +115,7 @@
               <div class="nav2">
                 <div>
                   <h6>Latest Press Release</h6>
-                  <p>Synechron Enhances Global Operations with Strategic Senior Appointments
+                  <p>Leewayzon Enhances Global Operations with Strategic Senior Appointments
                   </p>
                 </div>
                 <div>
@@ -168,7 +168,7 @@
               <div class="nav2">
                 <div>
                   <h6>Latest Press Release</h6>
-                  <p>Synechron Enhances Global Operations with Strategic Senior Appointments
+                  <p>Leewayzon Enhances Global Operations with Strategic Senior Appointments
                   </p>
                 </div>
                 <div>
@@ -181,7 +181,7 @@
           </div>
         </li>
         <li>
-          <a href="">Our Work</a>
+          <a href="our_work.html">Our Work</a>
         </li>
         <li id="insight"><a href="">Insight</a><i class="fa-solid fa-chevron-down"></i>
           <div class="insight">
@@ -192,18 +192,18 @@
                   <p>Insights from our experts on a variety of industry topics.</p>
                   <ul>
                     <li><a href="">Insights</a></li>
-                    <li><a href="">Podcasts</a></li>
+                    <li><a href="podcast.html">Podcasts</a></li>
                   </ul>
                   <ul>
                     <li><a href="">White Papers</a></li>
-                    <li><a href="">Video</a></li>
+                    <li><a href="insight-video.html">Video</a></li>
                   </ul>
                 </div>
               </div>
               <div class="nav2">
                 <div>
                   <h6>Latest Press Release</h6>
-                  <p>Synechron Enhances Global Operations with Strategic Senior Appointments
+                  <p>Leewayzon Enhances Global Operations with Strategic Senior Appointments
                   </p>
                 </div>
                 <div>
@@ -215,7 +215,7 @@
             </div>
           </div>
         </li>
-        <li><a href="">Careers</a></li>
+        <li><a href="jobs.html">Jobs</a></li>
         <i class="fa-solid fa-bars" onclick="sidebar()" id="sidebar"></i>
       </ul>
     </div>
@@ -268,13 +268,12 @@
             onclick="toggleMenu(this, document.getElementById('who'))"></i>
         </div>
         <ul class="who" id="who" style="display: none;">
-          <li><a href="who-we-are.html">Our Company</a></li>
+          <li><a href="our-company.html">Our Company</a></li>
           <li><a href="core_values.html">Our Core Values</a></li>
-          <li><a href="">Board Of Directors</a></li>
-          <li><a href="">Leadership Team</a></li>
+          <li><a href="about.html#leadership-team">Leadership Team</a></li>
           <li><a href="diversity.html">Diversity,Equity & Inclusion</a></li>
           <li><a href="our-partner.html">Our Partners</a></li>
-          <li><a href="">Corporate Social Responsibilities</a></li>
+          <li><a href="">Corporate Sustainability</a></li>
           <li><a href="">In the News</a></li>
           <li><a href="">Press Releases</a></li>
           <li><a href="">Events</a></li>
@@ -338,7 +337,7 @@
 
         </ul>
       </li>
-      <li><a href="">Our Work</a></li>
+      <li><a href="our_work.html">Our Work</a></li>
       <li>
         <div>
           <a href="">Insights</a>
@@ -347,9 +346,9 @@
         </div>
         <ul class="who" id="Insights" style="display: none;">
           <li><a href="">Insight </a></li>
-          <li><a href="">Podcast</a></li>
+          <li><a href="podcast.html">Podcast</a></li>
           <li><a href="">White Papers</a></li>
-          <li><a href="">Video</a></li>
+          <li><a href="insight-video.html">Video</a></li>
         </ul>
       </li>
       <!-- <li>
@@ -367,7 +366,7 @@
         </ul>
       </li> -->
       <li><a href="index.html#training">Training</a></li>
-      <li><a href="">Career</a></li>
+      <li><a href="jobs.html">Career</a></li>
       <div class="button">
         <button onclick="openmodal()">Contact us<i class="fa-solid fa-arrow-up"
             style=" transform: rotate(45deg); margin-left: 0.6rem; font-size: 12.8px;"></i></button>
@@ -900,32 +899,51 @@
             <br>Mumbai-400069</span>
         </div>
         <div class="box">
-          <p>Leewayzon</p>
+          <p>Who we are</p>
           <ul>
-            <li><a href="about.html">About us</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">Contact us</a></li>
-            <li><a href="">Careers</a></li>
+            <li><a href="our-company.html">Our Company</a></li>
+            <li><a href="core_values.html">Our Core Values</a></li>
+            <li><a href="about.html#leadership-team">Leadership Team</a></li>
+            <li><a href="diversity.html">Diversity,Equity & Inclusion</a></li>
+            <li><a href="our-partner.html">Our Partners</a></li>
+            <li><a href="">Corporate Sustainability</a></li>
+            <li><a href="">Events</a></li>
+            <li><a href="">Awards</a></li>
+            <li><a href="">Press release</a></li>
+            <li><a href="">In The News</a></li>
           </ul>
         </div>
         <div class="box">
-          <p>Services</p>
+          <p>What We DO</p>
           <ul>
+            <li><a href="AI.html">Artificial Intelligence</a></li>
             <li><a href="rpo.html">RPO</a></li>
             <li><a href="contract-staffing.html">Contract staffing</a></li>
             <li><a href="hr-outsourcing.html">HR outsourcing</a></li>
             <li><a href="direct-placement.html">Direct Placement</a></li>
             <li><a href="corporate-training.html">Corporate Training</a></li>
           </ul>
-        </div>
-        <div class="box">
           <p>Industries</p>
           <ul>
-            <li><a href="">Our Company</a></li>
-            <li><a href="">Our People</a></li>
-            <li><a href="">Search Methodology</a></li>
-            <li><a href="">Strategy</a></li>
+            <li><a href="">Hi-Tech</a></li>
+            <li><a href="">Financial Services</a></li>
+            <li><a href="">Insurence</a></li>
           </ul>
+        </div>
+        <div class="box">
+          <p>Insights</p>
+          <ul>
+            <li><a href="">Insights</a></li>
+            <li><a href="">White Paper</a></li>
+            <li><a href="insight-video.html">Video</a></li>
+            <li><a href="podcast.html">Podcast</a></li>
+          </ul>
+          <p>Our Work</p>
+          <ul>
+            <li><a href="our_work.html">About Our Work</a></li></ul>
+          <p>Jobs</p>
+          <ul>
+            <li><a href="jobs.html">career opportunities</a></li></ul>
         </div>
       </div>
       <div class="pvt">
