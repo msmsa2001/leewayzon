@@ -288,13 +288,50 @@ padding-right: 5rem;
 .home .about-us,
 .home .companies,
 .home .services,
-.home .services .section-header, .home .services .containers .container,
+.home .services .containers .container,
 .home .training,
 .home .feedback {
   padding: var(--nav-padding);
 
 }
+.services .container #jobs .box{
+  border-bottom: 4px solid #7479c1;
+  text-align: left;
+}
+.services .container #jobs .box h4{
+  margin:  0.7rem 0;
+}
+.services .container #jobs .box p,.services .container #jobs .box .jobpoints{
+  font-size: 12px;
+}
+.services .container #jobs .box .jobpoints span{
+  font-size: 21px;
+}
+.services .container #jobs .box:hover{
+  transform: translateY(-5px);
+}
+.services .container #jobs .box p{
+  margin-bottom: 0;
+}
+.services .container #jobs .box .jobpoints{
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.3rem;
+  gap: 1rem;
+ 
+}
+.services .container #jobs .apply{
+  font-size: 15px;
+  background: #bfe4f3;
+  padding: 0.5rem 1.8rem;
+  border-radius: 0.3rem;
+  margin-top: 3.5rem;
+  display: inline-block;
+  cursor: pointer;
+}
 .hero {
+
+  
 
   background-image: url("assets/home/home.png");
   background-size: cover;
@@ -679,13 +716,14 @@ transform: skewX(-35deg);
 .section-header p,
 .home .training .header p,
 .feedback p,
-.footer .container .box p,.services .container .containers .box p {
+.footer .container .box p,.services .container .containers .box p,.services .container #jobs .box .jobpoints {
   color: #8E8E8E;
   font-weight: 400;
   font-size: 16px;
   font-family: var(--h2-font-family);
   line-height: 20px;
 }
+
 .services .container .containers{
   display: grid;
   grid-template-columns: auto auto auto;
@@ -704,6 +742,7 @@ transform: skewX(-35deg);
   padding: 0.7rem 1.3rem 0.1rem 1.3rem;
   line-height: 4rem;
   /* position: relative; */
+  cursor: pointer;
 }
 .services .container .containers .box:hover{
 background: #0C59DB1A;
@@ -978,6 +1017,9 @@ width: 100%;
   .home .about-us .content p {
     width: 100%;
   }
+  .modal-content {
+    margin: 30% auto;
+  }
 }
 @media screen and (max-width:1020px) {
   .training .container{
@@ -985,6 +1027,9 @@ width: 100%;
   }
   .home .services #container, .about-us .content, .training .head, .training .container, .feedback, .feedback .google, .feedback h3, .feedback p, .feedback .container, .faq, .faq .img, .faq .accordion, .footer, .footer .container, .footer img {
     padding: 0.1rem 1.6rem 0.1rem 1.6rem;
+}
+#modal-cross{
+  right: -4rem !important;
 }
 .footer .container{
   display: grid;
@@ -1113,22 +1158,10 @@ padding: 2rem 0;
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 .modal {
   display: none; 
   position: fixed;
-  z-index: 1; 
+  z-index: 10; 
   left: 0;
   top: 0;
   width: 100%; 
@@ -1137,10 +1170,14 @@ padding: 2rem 0;
   background-color: rgb(0,0,0); 
   background-color: rgba(0,0,0,0.4); 
 }
+#modal-cross{
+  position: absolute; right: -6rem;top: 0;
+  font-size: 1.5rem;
 
+}
 .modal-content {
   background-color: #fefefe;
-  margin: 15% auto; 
+  margin: 11% auto; 
   padding: 20px;
   border: 1px solid #888;
   width: 40vw; 

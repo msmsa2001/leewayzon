@@ -90,7 +90,7 @@ padding-bottom: 2rem;
     font-weight: var(--h3-font-weight);
     line-height: var(--h3-line-height);
 }
-.container-add .box1 h6, .container-add2 .content h6,.directors h6{
+.container-add .box1 h6, .container-add2 .content h6,.directors h6,.container-add1 .container .pod-v h6{
 font-size: var(--h6-font-size);
 font-weight: var(--h6-font-weight);
 line-height: var(--h6-line-height);
@@ -129,7 +129,7 @@ background: #ffff;
     border-radius: 0.9rem;
     margin-bottom: 0.5rem;
 }
-.container-add .box2 .s-box h4, .container-add1 .container .s-box h4,.container-add3 .container .s-box h4,.core_values .core_box h4,.directors .container h4,.container-add2 .content button,.container-add1 .leader-ship .leader .para h4{
+.container-add .box2 .s-box h4, .container-add1 .container .s-box h4,.container-add3 .container .s-box h4,.core_values .core_box h4,.directors .container h4,.container-add2 .content button,.container-add1 .leader-ship .leader .para h4,.container-add1 .container .pod-v h4{
     font-size: var(--h4-size);
     line-height: var(--h6-line-height);
     font-weight: var(--h6-font-weight);
@@ -139,16 +139,39 @@ background: #ffff;
     line-height: var(--p-height);
     font-weight: var(--h3-font-weight);
 }
-.container-add1 .leader-ship .leader .para span{
+.container-add1 .leader-ship .leader .para span,.container-add1 .container .pod-v p,.services .container #jobs h6{
     font-size: 14px;
      color: gray;
      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 .container-add .box2 .s-box .points, .container-add1 .container .s-box .points, .container-add2 .content .points, .points{
     display: flex;
     align-items: start;
     gap: 0.6rem;
     padding: 0.2rem 0;
+}
+.container-add1 .container .pod-v h4{
+    color: rgb(1, 1, 3);
+}
+.container-add1 .container .pod-v:hover{
+
+}
+.container-add1 #pod-container a{
+    text-decoration: none;
+}
+.container-add1 .container .pod-v{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: #f5f5fe;
+    border-radius: 0.5rem;
+    border-bottom: 5px solid #8ac4f4;
+box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+
+}
+.container-add1 .container .pod-v img{
+    width: 30%;
 }
 .points i{
     color: var(--icon-color);
