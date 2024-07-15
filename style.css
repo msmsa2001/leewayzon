@@ -301,10 +301,10 @@ padding-right: 5rem;
 .services .container #jobs .box h4{
   margin:  0.7rem 0;
 }
-.services .container #jobs .box p,.services .container #jobs .box .jobpoints{
-  font-size: 12px;
+.services .container #jobs .box p,.services .container #jobs .box .jobpoints,.job-details .description .jobpoints{
+  font-size: 12px ;
 }
-.services .container #jobs .box .jobpoints span{
+.services .container #jobs .box .jobpoints span,.job-details .description .jobpoints span{
   font-size: 21px;
 }
 .services .container #jobs .box:hover{
@@ -319,6 +319,12 @@ padding-right: 5rem;
   margin-bottom: 0.3rem;
   gap: 1rem;
  
+}
+.job-details .description .jobpoints{
+  display: flex;
+
+  gap: 0.5rem;
+  font-size: 13px !important;
 }
 .services .container #jobs .apply{
   font-size: 15px;
@@ -716,7 +722,7 @@ transform: skewX(-35deg);
 .section-header p,
 .home .training .header p,
 .feedback p,
-.footer .container .box p,.services .container .containers .box p,.services .container #jobs .box .jobpoints {
+.footer .container .box p,.services .container .containers .box p,.services .container #jobs .box .jobpoints,.job-details .description .jobpoints {
   color: #8E8E8E;
   font-weight: 400;
   font-size: 16px;

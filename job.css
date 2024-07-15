@@ -17,6 +17,7 @@
     background-color: #fefefe;
     margin: auto;
     padding: 35px;
+    /* height: 100%; */
     border: 1px solid #888;
     width: 50vw;
     border-radius: 0.5rem;
@@ -38,8 +39,8 @@
     from {opacity: 0;}
     to {opacity: 1;}
 }
-.job-modal-content form input,textarea{
-    width: 100%;
+.job-modal-content form input, .job-modal-content form  textarea{
+    width: 100% ;
     border: 1px solid gray;
     padding: 0.5rem 0rem 0.5rem 1rem;
     margin: 0.22rem auto;
@@ -69,6 +70,70 @@
 .job-modal-body {
     margin-top: 10px;
 }
+.job-details{
+  display: flex;
+  padding-top: 8rem;
+}
+.job-details .description {
+  padding: 2rem 4rem ;
+}
+.job-details  h5, h4{
+  margin-top: 2rem;
+}
+.job-details .description .company-description{
+  font-weight: 400;
+    color: gray
+}
+.job-details .apply{
+  background: #eaeaea;
+  padding: 2rem 4rem;
+}
+.job-details .apply .job-button{
+  display: grid;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 0.8rem;
+}
+.job-details .apply .job-button button{
+  width: 80%;
+  padding: 0.7rem ;
+  border: none;
+  border-radius: 0.4rem;
+  box-shadow: 0 1px 4px 1px #FFFFFF;
+    transition: .5s all ease-in;
+    cursor: pointer;
+    font-weight: 500;
+}
+.job-details .apply .job-button .apply-btn, .job-details .apply .job-button .apply-contact:hover{
+  background: #0c2d3e;
+  color: white;
+}
+.job-details .apply .job-button .apply-contact, .job-details .apply .job-button .apply-btn:hover{
+  background: #f0f8fa;
+  color: #0c2d3e;
+}
+.job-details .apply .posted-by{
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  padding: 2.5rem 0 1rem 0;
+}
+.job-details .apply .posted-by img{
+width: 4rem;
+height: 4rem;
+border-radius: 50%;
+}
+.job-details .apply .share-social-icons a i{
+  font-size: 20px;
+  padding: 0.5rem 1rem 0 0;
+  color: #0c2d3e;
+  transition: .5s all ease-in;
+
+}
+.job-details .apply .share-social-icons a i:hover,.show-more-less{
+  color: #7479c1;
+  cursor: pointer;
+}
 @media screen and (max-width:1050px) {
    
     .job-modal-content {
@@ -80,10 +145,19 @@
     .job-modal-content {
       width: 50vw !important; 
     }
+    .job-details .description,.apply{
+      padding: 2rem !important;
+    }
   }
   @media screen and (max-width:770px) {
     .job-modal-content{
         width: 68vw !important;
+    }
+    .job-details{
+      flex-direction: column;
+    }
+    .job-details .apply .job-button button{
+      width: 100%;
     }
   }
   @media screen and (max-width:550px) {

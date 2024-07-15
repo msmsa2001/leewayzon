@@ -109,7 +109,7 @@
   .text-div{
     padding: 3.4rem 5.5rem 1rem;
   }
-  .text-div .title{
+  .text-div .title, .job-details .description h2{
     font-size: 40px;
     font-weight: var(--h2-weight);
     line-height: var(--h2-line-height);
